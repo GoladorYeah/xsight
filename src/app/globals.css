@@ -2,32 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+@layer base {
+    :root {
+        --foreground: 202 24% 9%;
+        --color-primary: #fd6a25;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:focus-visible {
+    outline: none;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color: var(--foreground);
+    overflow-y: scroll;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+a {
+    @apply transition-opacity;
+}
+
+a:hover {
+    @apply opacity-80;
+}
+
+a:active {
+    @apply opacity-50;
+}
+
+.text-animation {
+    --tw-bg-opacity: 1;
+    color: rgb(255 90 31 / var(--tw-bg-opacity));
+    animation: color-animation 3s linear infinite
+}
+
+@keyframes color-animation {
+    0% {
+        color: rgb(255 90 31 / var(--tw-bg-opacity))
+    }
+
+    32% {
+        color: rgb(255 90 31 / var(--tw-bg-opacity))
+    }
+
+    33% {
+        color: #000
+    }
+
+    65% {
+        color: rgb(255 90 31 / var(--tw-bg-opacity))
+    }
+
+    66% {
+        color: #636464
+    }
+}
+
+.star {
+    animation: star 10s ease-out infinite
+}
+
+@keyframes star {
+    0% {
+        opacity: 0;
+        transform: scale(1.5) translateY(-.75em)
+    }
+
+    20% {
+        opacity: 1
+    }
+
+    89% {
+        opacity: 1;
+        transform: scale(1)
+    }
+
+    to {
+        opacity: 0;
+        transform: translateZ(-1000em)
+    }
+}
+
+.splide__arrow.splide__arrow--prev {
+    left: 0;
+    opacity: 0.5;
+}
+
+.splide__arrow.splide__arrow--next {
+    right: 0;
+    opacity: 0.5;
+}
+
+.react-international-phone-input-container .react-international-phone-input {
+    @apply !block !p-3 !text-base !h-full max-h-[50px] !text-gray-700 !border !border-gray-200 !rounded-r-lg focus:ring-orange-300 focus:border-orange-300;
+}
+
+.react-international-phone-input-container {
+    @apply !h-full;
+}
+
+.react-international-phone-country-selector-button {
+    @apply !h-full !rounded-l-lg max-h-[50px];
 }

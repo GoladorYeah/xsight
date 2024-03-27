@@ -1,0 +1,12 @@
+.splide__pagination {
+    bottom: -1.5em;
+}
+
+.splide__pagination__page.is-active {
+    background: rgb(249 115 22 / var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+}
+
+.module li, p {
+    @apply text-sm md:text-base text-gray-500;
+}

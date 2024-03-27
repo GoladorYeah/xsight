@@ -1,0 +1,282 @@
+{
+  "Menu": {
+    "home": "Home",
+    "our-team": "Our Team",
+    "services": "Services",
+    "contact": "Contact",
+    "button": "Emergency Cases",
+    "privacy-policy": "Privacy Policy",
+    "terms-of-use": "Terms of Use"
+  },
+  "Hero": {
+    "title": "cybersecurity",
+    "title-animation": "full protection",
+    "text": "Xsight Cybersecurity - modular & adaptive solutions The Winner of i4Challenge 2022 by the Basel Innovation Area. IT & OT Сybersecurity, 24/7 protection by Hybrid SOC"
+  },
+  "Subscriptions": {
+    "title": "UNIQUE MIX of Cybersecurity OT & iT providing the best PROTECTION",
+    "color-title": "SUBSCRIBE FOR FULL SET OF MODULAR & ADAPTIVE SOLUTIONS",
+    "Basic": {
+      "title": "Basic Tier: for small entities",
+      "list-1": "- 24/7 essential monitoring",
+      "list-2": "- alerts, reports & support",
+      "list-3": "- incident respond & guidance"
+    },
+    "Standart": {
+      "title": "Standard Tier: for midsize entities",
+      "list-1": "- 24/7 deep monitoring",
+      "list-2": "- incident respond & forensic",
+      "list-3": "- compliance, policies & trainings",
+      "list-4": "- Basic Tier services"
+    },
+    "Advanced": {
+      "title": "Advanced Tier: for large companies",
+      "list-1": "- 24/7 total monitoring",
+      "list-2": "- incident respond & predictions",
+      "list-3": "- compliance & dedicated CISO",
+      "list-4": "- AI based threat intelligence",
+      "list-5": "- Standard Tier"
+    },
+    "Options": {
+      "title": "CUSTOMIZATION OPTIONS",
+      "option-1": "INDUSTRY-SPECIFIC MODULES",
+      "option-2": "ADVANCED AI THREAT HUNTING",
+      "option-3": "THREAT CONTAINMENT AND ERADICATION",
+      "option-4": "CUSTOM INCIDENT RESPONSE AND DFIR SERVICES",
+      "option-5": "CUSTOM TRAINING AND WORKSHOPS",
+      "option-6": "WEB AND EMAIL SECURITY SERVICES",
+      "option-7": "DATA LEAKAGE PREVENTION SERVICES",
+      "option-8": "IDENTITY AND ACCESS SOLUTIONS",
+      "option-9": "AI FORWARD DETECTION SOLUTIONS AND SERVICES",
+      "option-10": "REGULATORY COMPLIANCE AND BEST PRACTICES ADVISORY",
+      "option-11": "EXECUTIVE CYBERSECURITY BRIEFINGS",
+      "option-12": "VULNERABILITY ASSESSMENTS AND PENETRATION TESTING",
+      "option-13": "CLOUD SECURITY MANAGEMENT",
+      "option-14": "SECURITY ARCHITECTURE REVIEW AND OPTIMIZATION",
+      "option-15": "INCIDENT SIMULATION AND READINESS TESTING",
+      "option-16": "PERFORMANCE METRICS AND ROI ANALYSIS"
+    }
+  },
+  "Certificates": {
+    "title": "Our Certificates",
+    "color-title": "CERTIFICATES"
+  },
+  "Ibm": {
+    "text-1": "i4Challenge New Ideas winner 2022/2023 by Basel Innovation Area\n",
+    "text-2": "We are thrilled to be at the forefront of innovation, actively participating in the Basel Innovation Area.",
+    "text-3": "Our involvement underscores our commitment to pioneering new technologies and contributing to success in this dynamic field.",
+    "link": "Switzerland Innovation Park Basel Area - Startup Business Center"
+  },
+  "Emergency": {
+    "title": "AD HOC EMERGIENCES",
+    "list-1": "disaster recovery in ransomware & malware infections, data breaches, disrupting critical systems or services",
+    "list-2": "reverse engineering by blocking or containing the attacker & identifying the source of the attack",
+    "list-3": "successful prevention or limiting of future incidents"
+  },
+  "MonitoringData": {
+    "title": "PROTECTION & THREAT HUNTING",
+    "text": "Is your network secure round the clock? Facing a data breach or incident?",
+    "items": {
+      "item-1": {
+        "title": "Security Operations Center, SOC",
+        "list-1": "full guaranteed protection without any burden",
+        "list-2": "everybody connected stays inside of the strictly controlled perimeter",
+        "list-3": "services include all steps to reach full protection: audits, pentests, policies, compliance, training, etc."
+      },
+      "item-2": {
+        "title": "Incident Response & Recovery",
+        "list-1": "complete set of rules and instruments to effectively manage any cybersecurity issues",
+        "list-2": "data protection and fast recovery according to predefined effective procedures",
+        "list-3": "minimization of possible negative consequences of hacking"
+      }
+    }
+  },
+  "VerificationData": {
+    "title": "VERIFICATION & AUDITS",
+    "text": "How do you understand your security & secured future? When did you check your cybersecurity last time?",
+    "items": {
+      "item-1": {
+        "title": "Free Cybersecurity Scan",
+        "list-1": "fast automated snapshot of the company's IT cybersecurity issues",
+        "list-2": "compliance overview of cybersecurity issues client meets",
+        "list-3": "report with quantitive parameters and actionable next steps"
+      },
+      "item-2": {
+        "title": "Vulnerability Scaning",
+        "list-1": "automated scan with sophisticated tools and manual verification to report a wide range of vulnerabilities"
+      },
+      "item-3": {
+        "title": "IT infrastructure cybersecurity audit",
+        "list-1": "overview of IT infrastructure, data storages, access rights",
+        "list-2": "risk report to reveals weaknesses by attacker's perspective"
+      },
+      "item-4": {
+        "title": "Penetration Testing",
+        "list-1": "deep and manual dynamic verification by top professionals to reveal hidden threats"
+      },
+      "item-5": {
+        "title": "Audit of cybersecurity policies",
+        "list-1": "evaluation of information security policies & practices",
+        "list-2": "roadmap to reach dynamic system of cybersecurity"
+      },
+      "item-6": {
+        "title": "Red Teaming",
+        "list-1": "real-world cyber attacks simulation by top white-hackers according to customer request"
+      }
+    }
+  },
+  "EducationData": {
+    "title": "EDUCATION & CONSULTING",
+    "text": "How many clients can you lose without cybersecurity compliance? How your employees can protect your company?",
+    "items": {
+      "item-1": {
+        "title": "Certification & Compliance",
+        "list-1": "certification support (EU GDPR, PCI-DSS, HIPAA, ISO 27001, SOC-2)",
+        "list-2": "established compliance (PCI-DSS, HIPAA, ISO 27001, NISF Framework)"
+      },
+      "item-2": {
+        "title": "Security Training",
+        "text": "The first line of defense in an organization’s  cybersecurity",
+        "list-1": "cyber hygiene, phishing simulation & anti-social engineering",
+        "list-2": "executive cybersecurity awareness training"
+      }
+    }
+  },
+  "RoadMap": {
+    "title": "Xsight uses an iterative approach tailormade for each Customer and has highly trained professionals to construct each phase",
+    "color-title": "CYBERSECURITY MATURITY MODEL STAGES",
+    "image-url": "/roadmap.png",
+    "step": {
+      "start-up": {
+        "title": "START-UP cybersecurity level",
+        "list-1": "embryonic in nature",
+        "list-2": "initial capacity building",
+        "list-3": "no concrete actions"
+      },
+      "formative": {
+        "title": "FORMATIVE cybersecurity level",
+        "list-1": "some aspects formulated",
+        "list-2": "mainly ad-hoc",
+        "list-3": "disorganized or simply new"
+      },
+      "established": {
+        "title": "ESTABLISHED cybersecurity level",
+        "list-1": "some indicators in place",
+        "list-2": "some security fields are functional",
+        "list-3": "trade-off in relative investment"
+      },
+      "strategic": {
+        "title": "STRATEGIC cybersecurity level",
+        "list-1": "priorities of indicators are defined according to security fields",
+        "list-2": "choices conditionally reflect the organization's circumstances"
+      },
+      "dynamic": {
+        "title": "DYNAMIC cybersecurity level",
+        "list-1": "clear mechanisms to alter strategy depending on circumstances",
+        "list-2": "rapid decision-making, reallocation of resources, and constant attention"
+      }
+    }
+  },
+  "Cases": {
+    "title": "Case Studies",
+    "color-title": "CASES",
+    "case-1": {
+      "title": "Certification & Compliance",
+      "text": "<p>Customer is a worldwide web application company struggling to secure its B2B contracts due to its lack of certifications. The challenge was with a large company size and time shortage. Having eight teams, several applications, could infrastructure, they requested assistance in achieving ISO 27001, 27017, SOC 2 Type 2, and HIPAA compliance.&nbsp;</p><p>The need was to cooperate with all teams simultaneously and coordinate our highly\n        specialized experts for these fields.</p>\n    <p>As a result of our efforts, the customer passed ISO and the rest of the\n        audits from the first attempt. Our team was able to help the customer meet their compliance objectives and\n        expand\n        their business.</p>\n    <p>Our team performed a gap assessment (audit) and developed a detailed roadmap for achieving the\n        company’s desired compliance. We implemented necessary security processes and tools step by step with the teams,\n        developed security policies required by the standards, and led an audit from the company side.</p><p>The success was due to efficient cross-functional management by highly specialized experts and high experience in cooperation with different teams.</p>"
+    },
+    "case-2": {
+      "title": "Emergency cases",
+      "text": "<p>A large software product Company was attacked through a vulnerability in Apache Struts, the web application framework used by the Company. This vulnerability enabled unauthorized parties to access the Company's sensitive information. The Company recently did penetration testing with a third party, but the vulnerability was not discovered.</p><p>The Customer faced substantial losses, including paying $X million in penalties and settlements. Had the vendor performed a comprehensive penetration test, this weakness would have been discovered and addressed prior to the security breach. Our help decreased the number of possible losses by at least 10 times.</p><p>Our reverse engineers have discovered the source of vulnerability and blocked any unauthorized access, except supply-chain and sales partners, fixed the problem, and stopped further data leakage that significantly decreased the losses.</p><p>The key factor of our intervention was based on a more systematic and deeper approach. Furthermore, our experienced team could react more specifically and not only following standards.</p>"
+    },
+    "case-3": {
+      "title": "Penetration testing",
+      "text": "<p>We were recently engaged by the Customer, a well-known retail service, to perform a penetration test on their systems.&nbsp; According to internal cybersecurity procedures, they are supposed to make regular checks.</p><p>Through the test, we identified several vulnerabilities, such as an unsecured server and poor password practices, which we promptly addressed to enhance their security and fix the problem.</p><p>Had the Customer postponed the penetration testing, it would have left them vulnerable to a data breach that could have jeopardized millions of their customer's personal and financial data. The breach was triggered by a company's payment card processing system flaw.</p>"
+    },
+    "case-4": {
+      "title": "Security Operations Center, SOC",
+      "text": "<p>A global production company experienced slow online services and suspected a ransomware attack that may lead to its partners' financial losses. The company needed to quickly identify and remediate security breaches to protect its systems and prevent further financial losses.</p><p>After referring to our services, we found weak cybersecurity protection procedures in the customer's systems. We recommend strategically resolving the issue by joining our SOC to reduce the risks of future data breaches and prevent vulnerabilities as much as possible.</p><p>As a starting point for joining a Security Operations Center (SOC), a vulnerability scan identified two-thirds of all security breaches, and thorough penetration testing revealed the remaining one-third. And further joining the SOC, it successfully thwarted attempts to exploit previous vulnerabilities.</p><p>Thanks to our specialized and experienced team, we quickly understood the situation.</p><p>This allowed the fast implementation of effective cybersecurity solutions helped to resolve the issue quickly and to bring measures to prevent further financial losses for the company and its partners.</p>"
+    },
+    "case-5": {
+      "title": "Cybersecurity Audits: risk assessment",
+      "text": "<p>Before launching its new IT product, a software development company wisely decided to invest in conducting an extensive risk assessment. The company needed to identify potential risks and vulnerabilities in the product to prevent malicious attacks and ensure customer satisfaction.</p><p>The problem statement involved identifying a proficient code review service within the information technology industry capable of thoroughly examining potential cybersecurity vulnerabilities.</p><p>Our experts carefully reviewed the product's underlying code, as well as their security policies and procedures. The diligent review uncovered several high-risk vulnerabilities&nbsp; (such as unsecured APIs and weak authentication) and areas where additional safeguards could be implemented, such as improving secure coding practices and regular vulnerability scanning before releasing new versions.&nbsp;</p><p>With our modular system approach, we could efficiently implement customized proactive steps to reduce risks, and by taking these proposed proactive steps before launch, the company could identify potential risks and weak spots before going live.</p>"
+    },
+    "case-6": {
+      "title": "Security Training",
+      "text": " <p>A financial services firm recently requested to help conduct its cybersecurity awareness training to protect Customer's data as much as possible, knowing recent cybersecurity threat cases in the industry. The company needed to identify risky behavior and provide tailored training to address it rather than relying on broad annual training.</p><p>To measure the baseline and identify risky behavior, we researched Customer's processes, developed a risk quantification model, and initiated a fake phishing email campaign to flag employees who performed insecure actions. Our team created short, individualized training specifically tailored to the flagged employee's circumstances.</p><p>After three months, a second fake phishing email campaign was conducted to measure employee behaviors and refresh skills improvement.&nbsp; The second measurement shows an 80% improvement in reporting suspicious emails.</p>"
+    }
+  },
+  "NotFoundPage": {
+    "title": "Hello world!"
+  },
+  "Buttons": {
+    "GetStarted": "Get Started",
+    "LearnMore": "Learn More",
+    "QuickStart": "Quick START"
+  },
+  "Pages": {
+    "OurTeam": {
+      "hero-title": "We're excited to contribute to the Basel Innovation Area, showcasing our commitment to new technologies and shared success.",
+      "team": {
+        "title": "Meet Our Management Team & Advisory Board",
+        "color-title": "OUTSTANDING TEAM OF CYBERSECURITY & BUSINESS PROFESSIONALS",
+        "text": "We are a large team of highly technical professionals specializing in IT & OT cybersecurity sectors. We operate a number of cybersecurity facilities, including 4 Security Operations Centers, and provide protection to our clients worldwide. We support the growth of cybersecurity maturity and offer an extensive range of training for various purposes.",
+        "card-1": {
+          "name": "Yaroslav Pryymak",
+          "prof": "Managing Partner & CPO",
+          "text": "Chief Product Officer/ Market Strategist in Cybersecurity, Blockchain, Crypto, FinTech, AI & Big Data"
+        },
+        "card-2": {
+          "name": "Svitlana Skrypka",
+          "prof": "Project Manager & Cybersecurity Trainer",
+          "text": "Donor relations manager@Lviv IT Cluster // Co-founder@XSIGHT Cybersecurity"
+        },
+        "card-3": {
+          "name": "Alex Bilyi",
+          "prof": "Business Development Manager",
+          "text": "Business Growth. Empowering Startups for Sales Success. Key Account Sales, B2B  Leads in LinkedIn and Social Media. "
+        },
+        "card-4": {
+          "name": "Albert Hilber",
+          "prof": "Honorary Advisory Board Member",
+          "text": "Manager Upper Rhine 4.0 at Basel Area Business & Innovation"
+        },
+        "card-5": {
+          "name": "Christophe Walch",
+          "prof": "Honorary Advisory Board Member",
+          "text": "Entreprenuer, Angel Investor. Think Great! Who ever heard about Alexander the average?"
+        },
+        "card-6": {
+          "name": "Daniel Schmutz",
+          "prof": "Advisory Board Member",
+          "text": "Cyber Security Enthusiast @ Trend Micro | Channel Sales, Alliances, Marketing"
+        },
+        "card-7": {
+          "name": "Matthias von Arx",
+          "prof": "Advisory Board Member",
+          "text": "CExecutive Leader | ICT & Cyber Security Professional | Business Developer | Consultative & Value Seller | Strategist | Digitizer | Early Adopter"
+        },
+        "card-8": {
+          "name": "Christian Ulmer",
+          "prof": "Advisory Board Member",
+          "text": "Seasoned & transformational CISO"
+        }
+      },
+      "why-xsight": {
+        "title": "Main asset in cybersecurity business are experienced and reliable professionals. Our professionals have strong real experience obtained in tough environment",
+        "color-title": "ABOUT US",
+        "block-1": {
+          "title": "why Xsight?",
+          "text": "<p>As the threat of cyber attacks continues to grow, it is crucial for businesses to take proactive measures to protect themselves. XSIGHT Cybersecurity offers a comprehensive range of cybersecurity services to help businesses stay safe and secure in the digital age.</p><p>Modular cybersecurity system - we have knowledge of a wide variety of tools and have the skills to select the best to run your specific case. We need to know some details to do this, so we start with specific checks and audits.</p>"
+        },
+        "block-2": {
+          "title": "Offer",
+          "text": "XSIGHT Cybersecurity offers a modular approach to cybersecurity services, including penetration testing, incident response, security policy audits, permanent protection (security operation center), and cybersecurity education, certification & compliance support. \n\nOur management team consists of experienced professionals in the cybersecurity field, finances, and education, including certified ethical hackers, security experts, and incident response specialists. We use industry-standard tools and technologies for our services and have a proper incident response plan in place."
+        },
+        "block-3": {
+          "title": "Goal",
+          "text": "We strive to help our clients meet industry best practices and regulatory requirements for cybersecurity while providing high customer service. By continuously improving our services and staying current with the latest industry trends and technologies, we aim to establish ourselves as a leading provider of cybersecurity solutions in the region. Our goal is to be a partner our clients can trust to keep their sensitive data and systems safe and secure."
+        }
+      }
+    }
+  }
+}
