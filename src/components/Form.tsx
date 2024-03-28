@@ -52,7 +52,7 @@ const ContactForm: React.FC = () => {
                 apiKey: 'mlsn.9567b76f42d5dc8e03b958997af3647617f3050e0abf7014b452eca43a09b92b',
             });
 
-            const sentFrom = new Sender("info@xsight.ch", "Your name");
+            const sentFrom = new Sender("info@trial-3zxk54vn6yxljy6v.mlsender.net", "Your name");
 
             const recipients = [
                 new Recipient("dispel063@gmail.com", "Your Client")
