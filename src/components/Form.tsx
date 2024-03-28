@@ -49,6 +49,7 @@ const ContactForm: React.FC = () => {
 
             // Отправляем запрос на API Mailjet для отправки письма
             const response = await fetch('https://api.mailjet.com/v3.1/send', {
+                mode: 'no-cors',
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
