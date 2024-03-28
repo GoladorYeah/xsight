@@ -34,11 +34,50 @@ const ContactForm: React.FC = () => {
         setFormData({...formData, [name]: value});
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
             schema.parse(formData);
-            // Здесь можно добавить логику отправки данных формы на сервер
+            // Формируем текст письма
+            const emailContent = `
+            First Name: ${formData.firstName}
+            Last Name: ${formData.lastName}
+            Email: ${formData.email}
+            Phone: ${formData.phone}
+            Message: ${formData.message}
+        `;
+
+            // Отправляем запрос на API Mailjet для отправки письма
+            const response = await fetch('https://api.mailjet.com/v3.1/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Basic ${btoa('113a3ae14f9eee2aaad49eff077b93f1:abf54730f98037a6a61a4c96fa3ab6667')}`, // Замените api_key и api_secret на ваши ключи
+                },
+                body: JSON.stringify({
+                    Messages: [{
+                        From: {
+                            Email: 'info@xsight.ch', // Замените на ваш email
+                            Name: 'Xsight Cybersecurity'
+                        },
+                        To: [{
+                            Email: 'dispel063@gmail.com', // Замените на email получателя
+                            Name: 'Recipient Name'
+                        }],
+                        Subject: 'Contact Form Submission',
+                        TextPart: emailContent
+                    }]
+                }),
+            });
+
+            if (response.ok) {
+                console.log('Email sent successfully!');
+                // После успешной отправки можно сбросить состояние формы
+                setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});
+                setErrors({});
+            } else {
+                console.error('Failed to send email');
+            }
             console.log(formData);
             // После отправки формы можно сбросить состояние
             setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});

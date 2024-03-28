@@ -12,6 +12,7 @@ export default function VerificationAudits() {
         {
             id: 1,
             title: t('items.item-1.title'),
+            link: 'services/cybersecurity-audits',
             items: [
                 t('items.item-1.list-1'),
                 t('items.item-1.list-2'),
@@ -21,6 +22,7 @@ export default function VerificationAudits() {
         {
             id: 2,
             title: t('items.item-2.title'),
+            link: 'services/vulnerability-scanning-service',
             items: [
                 t('items.item-2.list-1')
             ],
@@ -29,6 +31,7 @@ export default function VerificationAudits() {
         {
             id: 3,
             title: t('items.item-3.title'),
+            link: 'services/cybersecurity-audits',
             items: [
                 t('items.item-3.list-1'),
                 t('items.item-3.list-2')
@@ -38,6 +41,7 @@ export default function VerificationAudits() {
         {
             id: 4,
             title: t('items.item-4.title'),
+            link: 'services/penetration-testing-services',
             items: [
                 t('items.item-4.list-1')
             ],
@@ -46,6 +50,7 @@ export default function VerificationAudits() {
         {
             id: 5,
             title: t('items.item-5.title'),
+            link: 'services/cybersecurity-audits',
             items: [
                 t('items.item-5.list-1'),
                 t('items.item-5.list-2')
@@ -55,6 +60,7 @@ export default function VerificationAudits() {
         {
             id: 6,
             title: t('items.item-6.title'),
+            link: 'services/red-teaming-services',
             items: [
                 t('items.item-6.list-1')
             ],

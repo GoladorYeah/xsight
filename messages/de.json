@@ -1,2 +1,584 @@
 {
+  "Menu": {
+    "home": "Home",
+    "our-team": "Unser Team",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "button": "Notfälle",
+    "privacy-policy": "Datenschutzrichtlinie",
+    "terms-of-use": "Benutzungsbedingungen"
+  },
+  "Hero": {
+    "title": "CYBERSICHERHEIT",
+    "title-animation": "VOLLER SCHUTZ",
+    "text": "Xsight Cybersecurity - modulare & adaptive Lösungen. Der Gewinner des i4Challenge 2022 im Bereich Basel Innovation Area. IT- & OT-Cybersicherheit, 24/7-Schutz durch Hybrid-SOC"
+  },
+  "Subscriptions": {
+    "title": "Ein EINZIGARTIGER MIX aus Cybersicherheit für OT & IT, der den besten SCHUTZ bietet",
+    "color-title": "ABONNIEREN SIE FÜR DAS VOLLSTÄNDIGE SET AN MODULAREN UND ANPASSUNGSFÄHIGEN LÖSUNGEN",
+    "Basic": {
+      "title": "Basic Tier: for small entities",
+      "list-1": "- 24/7 Grundüberwachung",
+      "list-2": "- Warnungen, Berichte & Unterstützung",
+      "list-3": "- Vorfallreaktion und Anleitung"
+    },
+    "Standart": {
+      "title": "Standardstufe: Für mittelgroße Unternehmen",
+      "list-1": "- 24/7 tiefe Überwachung",
+      "list-2": "- Vorfallreaktion und forensische Untersuchung",
+      "list-3": "- Compliance, Richtlinien und Schulungen",
+      "list-4": "- Dienstleistungen der Basisebene"
+    },
+    "Advanced": {
+      "title": "Fortgeschrittene Stufe: Für große Unternehmen",
+      "list-1": "- 24/7 umfassende Überwachung",
+      "list-2": "- Vorfallreaktion und Vorhersagen",
+      "list-3": "- compliance & dedicated CISO",
+      "list-4": "- Compliance und dedizierter CISO",
+      "list-5": "- Standardstufe"
+    },
+    "Options": {
+      "title": "Anpassungsoptionen",
+      "option-1": "Branchenspezifische Module",
+      "option-2": "Fortgeschrittene KI-Bedrohungssuche",
+      "option-3": "Bedrohungsabwehr und Ausrottung",
+      "option-4": "Kundenspezifische Vorfallreaktion und DFIR-Dienste",
+      "option-5": "Maßgeschneiderte Schulungen und Workshops",
+      "option-6": "Web- und E-Mail-Sicherheitsdienste",
+      "option-7": "Dienste zur Verhinderung von Datenlecks",
+      "option-8": "Identitäts- und Zugriffslösungen",
+      "option-9": "KI-basierte Vorwärtsdetektionslösungen und -dienste",
+      "option-10": "Beratung zu regulatorischer Compliance und Best Practices",
+      "option-11": "Führungskräfte-Cybersicherheitsbesprechungen",
+      "option-12": "Vulnerabilitätsbewertungen und Penetrationstests",
+      "option-13": "Cloud-Sicherheitsmanagement",
+      "option-14": "Überprüfung und Optimierung der Sicherheitsarchitektur",
+      "option-15": "Simulation von Vorfällen und Testen der Bereitschaft",
+      "option-16": "Leistungsmetriken und ROI-Analyse"
+    }
+  },
+  "Certificates": {
+    "title": "Unsere Zertifikate",
+    "color-title": "ZERTIFIKATE"
+  },
+  "Ibm": {
+    "text-1": "Gewinner des i4Challenge New Ideas Wettbewerbs 2022/2023 der Basel Innovation Area",
+    "text-2": "Wir sind begeistert, an der Spitze der Innovation zu sein und aktiv an der Basel Innovation Area teilzunehmen.",
+    "text-3": "Unsere Beteiligung unterstreicht unser Engagement für die Entwicklung neuer Technologien und unseren Beitrag zum Erfolg in diesem dynamischen Bereich.",
+    "link": "Switzerland Innovation Park Basel Area - Startup Business Center"
+  },
+  "Emergency": {
+    "title": "Akute Notfälle",
+    "list-1": "Wiederherstellung nach Ransomware- und Malware-Infektionen, Datenlecks, Störung kritischer Systeme oder Dienste",
+    "list-2": "Reverse Engineering durch Blockieren oder Eindämmen des Angreifers und Identifizieren der Angriffsquelle",
+    "list-3": "Erfolgreiche Prävention oder Begrenzung zukünftiger Vorfälle"
+  },
+  "MonitoringData": {
+    "title": "PROTECTION & THREAT HUNTING",
+    "text": "Ist Ihr Netzwerk rund um die Uhr geschützt? Sind Sie gerade von einem Datenverlust oder einem Eindringen betroffen?",
+    "items": {
+      "item-1": {
+        "title": "Sicherheitsbetriebszentrum (SOZ)",
+        "list-1": "Vollständiger garantierter Schutz ohne Belastung ",
+        "list-2": "Jeder, der verbunden ist, bleibt innerhalb des streng kontrollierten Perimeters",
+        "list-3": "Dienstleistungen umfassen alle Schritte zum Erreichen eines vollständigen Schutzes: Audits, Penetrationstests, Richtlinien, Einhaltung von Vorschriften, Schulungen usw."
+      },
+      "item-2": {
+        "title": "Vorfalldurchführung und Wiederherstellung",
+        "list-1": "Vollständiger Satz von Regeln und Instrumenten zur effektiven Bewältigung von Cybersicherheitsproblemen",
+        "list-2": "Datenschutz und schnelle Wiederherstellung gemäß vordefinierten effektiven Verfahren",
+        "list-3": "Minimierung der Auswirkungen einer Cyber-Attacke"
+      }
+    }
+  },
+  "VerificationData": {
+    "title": "PRüFUNGEN & AUDITS",
+    "text": "Wie verstehen Sie Ihre Sicherheit und eine gesicherte Zukunft? Wann haben Sie zuletzt Ihre Cybersicherheit überprüft?",
+    "items": {
+      "item-1": {
+        "title": "Gratis Cybersicherheitsüberprüfung",
+        "list-1": "schnelle automatisierte Übersicht über die IT-Cybersicherheitsprobleme des Unternehmens",
+        "list-2": "Überblick über die Einhaltung von Cybersicherheitsvorschriften, die der Kunde erfüllt",
+        "list-3": "Bericht mit quantitativen Parametern und konkreten nächsten Schritten"
+      },
+      "item-2": {
+        "title": "Schwachstellen-Scan",
+        "list-1": "automatischer Scan mit Hochleistungswerkzeugen und manueller Nachsuche um einen weiteren Bereich potenzieller Verletzlichkeiten abzudecken"
+      },
+      "item-3": {
+        "title": "Cybersicherheitsaudit der IT-Infrastruktur",
+        "list-1": "Struturdokumentaton Ihres Systems einschl. Speichersystemen etc.",
+        "list-2": "Bericht offenbart die System-Schwächen, die ein potenzieller Angreifer wahrscheinlch ausnützen würde"
+      },
+      "item-4": {
+        "title": "Penetrationstests",
+        "list-1": "händische, eingehende Überprüfung durch unsere Top-Spezialisten"
+      },
+      "item-5": {
+        "title": "Audit der Cybersicherheitsrichtlinien",
+        "list-1": "Evaluation der Policies und Umsetzungen",
+        "list-2": "Erstellung einer Roadmapum um zu einen dynamischen, adaptiven System der Cybersicherheit zu gelangen"
+      },
+      "item-6": {
+        "title": "Red Team",
+        "list-1": "Cypber-Attacen Simulationen durch White-Hackers nach Ihren Wünschen"
+      }
+    }
+  },
+  "EducationData": {
+    "title": "BILDUNG UND BERATUNG",
+    "text": "Wieviele Kunden kann Sie eine mangelnde Cybersecurity-Compliance schlimmstenfalls kosten? Wie können Ihre Angestellten Ihr Unternehmen schützen?",
+    "items": {
+      "item-1": {
+        "title": "Zertifizierung und Einhaltung von Vorschriften",
+        "list-1": "Unterstützung bei der Zertifizierung  (nach EU GDPR, PCI-DSS, HIPAA, ISO 27001, SOC-2)",
+        "list-2": "Track-Record erfolgreicher Zertizierungsbegleitungen (nach PCI-DSS, HIPAA, ISO 27001, NISF Framework)"
+      },
+      "item-2": {
+        "title": "Schulungen zur Cybersicherheit",
+        "text": " Die erste Verteidigungslinie in der Cybersicherheit einer Organisation umfasst",
+        "list-1": "Cyber-Hygiene, Phishing-Simulation, Anti-Social-Engineering-Maßnahmen",
+        "list-2": "Schulungen zur Sensibilisierung von Führungskräften in Bezug auf Cybersicherheit"
+      }
+    }
+  },
+  "RoadMap": {
+    "title": "Xsight nutzt ein auf den Kunden individuell angepasstes, iteratives Verfahren",
+    "color-title": "STUFEN DES CYBERSICHERHEITSREIFEMODELLS",
+    "image-url": "/roadmap-de.png",
+    "step": {
+      "start-up": {
+        "title": "START-UP-Cybersicherheitsniveau",
+        "list-1": "embryonaler Natur",
+        "list-2": "anfänglicher Kapazitätsaufbau",
+        "list-3": "keine konkreten Aktionen"
+      },
+      "formative": {
+        "title": "FORMATIVES Cybersicherheitsniveau",
+        "list-1": "einige Aspekte formuliert",
+        "list-2": "hauptsächlich ad hoc",
+        "list-3": "unorganisiert oder einfach neu"
+      },
+      "established": {
+        "title": "ETABLIERTES Cybersicherheitsniveau",
+        "list-1": "einige Indikatoren sind vorhanden",
+        "list-2": "einige Sicherheitsbereiche sind funktionsfähig",
+        "list-3": "ein Kompromiss bei der relativen Investition"
+      },
+      "strategic": {
+        "title": "STRATEGISCHES Cybersicherheitsniveau",
+        "list-1": "prioritäten der Indikatoren werden entsprechend den Sicherheitsbereichen definiert ",
+        "list-2": "die Entscheidungen spiegeln bedingt die Umstände der Organisation wider"
+      },
+      "dynamic": {
+        "title": "DYNAMISCHES Cybersicherheitsniveau",
+        "list-1": "klare Mechanismen zur Änderung der Strategie je nach Umständen",
+        "list-2": "schnelle Entscheidungsfindung, Umverteilung von Ressourcen und ständige Aufmerksamkeit"
+      }
+    }
+  },
+  "Cases": {
+    "title": "Fallstudien",
+    "color-title": "FÄLLE",
+    "case-1": {
+      "title": "Zertifizierung & Einhaltung von Vorschriften",
+      "text": "<p>Der Kunde ist ein weltweit tätiges Webanwendungsunternehmen, das Schwierigkeiten hat, seine B2B-Verträge aufgrund fehlender Zertifizierungen abzusichern. Die Herausforderung besteht in der Größe des Unternehmens und dem Zeitmangel. Mit acht Teams, mehreren Anwendungen und komplexer Infrastruktur bat das Unternehmen um Unterstützung bei der Erreichung der ISO 27001, 27017, SOC 2 Type 2 und HIPAA Compliance.</p>\n<p>Es war erforderlich, mit allen Teams gleichzeitig zusammenzuarbeiten und unsere hochspezialisierten Experten für diese Bereiche zu koordinieren.</p>\n<p>Als Ergebnis unserer Bemühungen bestand der Kunde die ISO-Prüfung und die restlichen Audits bereits beim ersten Versuch. Unser Team konnte dem Kunden helfen, seine Compliance-Ziele zu erreichen und sein Geschäft auszubauen.</p>\n<p>Unser Team führte eine Gap-Analyse (Audit) durch und entwickelte einen detaillierten Fahrplan für die Erreichung der gewünschten Compliance des Unternehmens. Wir implementierten schrittweise notwendige Sicherheitsprozesse und -werkzeuge mit den Teams, entwickelten die von den Standards geforderten Sicherheitsrichtlinien und leiteten ein Audit von Seiten des Unternehmens.</p>\n<p>Der Erfolg beruhte auf effizientem, funktionsübergreifendem Management durch hochspezialisierte Experten und hohe Erfahrung in der Zusammenarbeit mit verschiedenen Teams.</p>"
+    },
+    "case-2": {
+      "title": "Notfälle",
+      "text": "<p>Ein großes Softwareunternehmen wurde über eine Schwachstelle in Apache Struts, dem von dem Unternehmen verwendeten Webanwendungsframework, angegriffen. Diese Schwachstelle ermöglichte es unbefugten Parteien, auf die sensiblen Informationen des Unternehmens zuzugreifen. Das Unternehmen führte kürzlich Penetrationstests mit einem Drittanbieter durch, aber die Schwachstelle wurde nicht entdeckt.</p>\n<p>Der Kunde erlitt erhebliche Verluste, darunter Zahlungen von X Millionen Dollar an Strafen und Vergleichen. Hätte der Anbieter einen umfassenden Penetrationstest durchgeführt, wäre diese Schwachstelle vor dem Sicherheitsvorfall entdeckt und behoben worden. Unsere Hilfe verringerte die möglichen Verluste um mindestens das Zehnfache.</p>\n<p>Unsere Reverse-Ingenieure haben die Quelle der Schwachstelle entdeckt und jeden unbefugten Zugriff blockiert, außer bei Lieferketten- und Vertriebspartnern, das Problem behoben und weitere Datenlecks gestoppt, was die Verluste signifikant verringerte.</p>\n<p>Der entscheidende Faktor unseres Eingreifens basierte auf einem systematischeren und tiefergehenden Ansatz. Darüber hinaus konnte unser erfahrenes Team spezifischer reagieren und nicht nur Standards befolgen.</p>"
+    },
+    "case-3": {
+      "title": "Penetrationstests",
+      "text": "<p>Wir wurden kürzlich vom Kunden, einem bekannten Einzelhandelsservice, beauftragt, einen Penetrationstest an ihren Systemen durchzuführen. Gemäß den internen Cybersicherheitsverfahren sollen regelmäßige Überprüfungen durchgeführt werden.</p>\n<p>Durch den Test haben wir mehrere Schwachstellen identifiziert, wie zum Beispiel einen ungesicherten Server und schlechte Passwortpraktiken, die wir umgehend behoben haben, um ihre Sicherheit zu verbessern und das Problem zu lösen.</p>\n<p>Hätte der Kunde den Penetrationstest verschoben, hätte dies sie anfällig für einen Datenverstoß gemacht, der Millionen von Kundendaten gefährdet hätte. Der Verstoß wurde durch einen Fehler im Zahlungskartensystem des Unternehmens ausgelöst.</p>"
+    },
+    "case-4": {
+      "title": "Sicherheitsbetriebszentrum (SOZ)",
+      "text": "<p>Ein globales Produktionsunternehmen erlebte langsame Online-Dienste und verdächtigte einen Ransomware-Angriff, der zu finanziellen Verlusten bei seinen Partnern führen könnte. Das Unternehmen musste Sicherheitsverletzungen schnell identifizieren und beheben, um seine Systeme zu schützen und weitere finanzielle Verluste zu verhindern.</p>\n<p>Nachdem das Unternehmen unsere Dienste in Anspruch genommen hatte, fanden wir schwache Cybersicherheitsverfahren in den Systemen des Kunden. Wir empfahlen, das Problem strategisch zu lösen, indem wir unserem SOC beitraten, um das Risiko zukünftiger Datenverstöße zu reduzieren und Schwachstellen so weit wie möglich zu verhindern.</p>\n<p>Als Ausgangspunkt für die Teilnahme an einem Security Operations Center (SOC) identifizierte ein Schwachstellen-Scan zwei Drittel aller Sicherheitsverstöße, und gründliche Penetrationstests enthüllten das verbleibende Drittel. Durch die weitere Teilnahme am SOC wurden Versuche, frühere Schwachstellen auszunutzen, erfolgreich vereitelt.</p>\n<p>Dank unseres spezialisierten und erfahrenen Teams haben wir die Situation schnell verstanden.</p>\n<p>Dies ermöglichte die schnelle Umsetzung effektiver Cybersicherheitslösungen, die dazu beitrugen, das Problem schnell zu lösen und Maßnahmen zu ergreifen, um weitere finanzielle Verluste für das Unternehmen und seine Partner zu verhindern.</p>"
+    },
+    "case-5": {
+      "title": "Cybersicherheitsaudits: Risikobewertung",
+      "text": "<p>Vor der Einführung seines neuen IT-Produkts entschied sich ein Softwareentwicklungsunternehmen weise dafür, eine umfassende Risikobewertung durchzuführen. Das Unternehmen musste potenzielle Risiken und Schwachstellen im Produkt identifizieren, um böswillige Angriffe zu verhindern und die Kundenzufriedenheit sicherzustellen.</p>\n<p>Das Problem bestand darin, einen kompetenten Code-Review-Service innerhalb der IT-Branche zu identifizieren, der in der Lage ist, potenzielle Cybersicherheitsrisiken gründlich zu untersuchen.</p>\n<p>Unsere Experten haben den zugrunde liegenden Code des Produkts sowie deren Sicherheitsrichtlinien und -verfahren sorgfältig geprüft. Die gründliche Überprüfung deckte mehrere Hochrisiko-Schwachstellen auf (wie ungesicherte APIs und schwache Authentifizierung) sowie Bereiche, in denen zusätzliche Sicherheitsvorkehrungen implementiert werden konnten, wie die Verbesserung sicherer Codierungspraktiken und regelmäßige Schwachstellen-Scans vor der Veröffentlichung neuer Versionen.</p>\n<p>Mit unserem modularen Systemansatz konnten wir effizient maßgeschneiderte proaktive Schritte zur Risikoreduzierung umsetzen. Durch die Umsetzung dieser vorgeschlagenen proaktiven Schritte vor dem Start konnte das Unternehmen potenzielle Risiken und Schwachstellen identifizieren, bevor es live ging.</p>"
+    },
+    "case-6": {
+      "title": "Sicherheitsschulungen",
+      "text": "<p>Ein Finanzdienstleistungsunternehmen bat kürzlich um Hilfe bei der Durchführung seines Cyber-Sicherheitsschulungsprogramms, um die Kundendaten so weit wie möglich zu schützen, angesichts aktueller Fälle von Cyber-Bedrohungen in der Branche. Das Unternehmen musste riskantes Verhalten identifizieren und maßgeschneiderte Schulungen anbieten, um darauf einzugehen, anstatt sich auf allgemeine jährliche Schulungen zu verlassen.</p>\n<p>Um die Ausgangsbasis zu messen und riskantes Verhalten zu identifizieren, haben wir die Prozesse des Kunden recherchiert, ein Risikoquantifizierungsmodell entwickelt und eine fingierte Phishing-E-Mail-Kampagne gestartet, um Mitarbeiter zu identifizieren, die unsichere Aktionen durchführen. Unser Team hat kurze, individualisierte Schulungen speziell auf die Umstände der identifizierten Mitarbeiter zugeschnitten.</p>\n<p>Nach drei Monaten wurde eine zweite fingierte Phishing-E-Mail-Kampagne durchgeführt, um das Verhalten der Mitarbeiter zu messen und die Verbesserung der Fähigkeiten zu aktualisieren. Die zweite Messung zeigt eine 80%ige Verbesserung bei der Meldung verdächtiger E-Mails.</p>"
+    }
+  },
+  "NotFoundPage": {
+    "title": "Hello world!"
+  },
+  "Buttons": {
+    "GetStarted": "Loslegen",
+    "LearnMore": "Erfahren Sie mehr",
+    "QuickStart": "Schneller START"
+  },
+  "Pages": {
+    "OurTeam": {
+      "hero-title": "Wir freuen uns, einen Beitrag zum Innovationsgebiet Basel zu leisten und damit unser Engagement für neue Technologien und gemeinsamen Erfolg zu zeigen.",
+      "team": {
+        "title": "Lernen Sie unser Managementteam und unseren Beirat kennen",
+        "color-title": "HERAUSRAGENDES TEAM VON CYBERSICHERHEITS- UND GESCHÄFTSPROFIS",
+        "text": "Wir sind ein großes Team hochqualifizierter Fachleute, die sich auf die Bereiche IT- und OT-Cybersicherheit spezialisiert haben. Wir betreiben eine Reihe von Cybersicherheitseinrichtungen, darunter 4 Security Operations Centers, und bieten weltweit Schutz für unsere Kunden an. Wir unterstützen das Wachstum der Cybersicherheitsreife und bieten eine umfangreiche Palette von Schulungen für verschiedene Zwecke an.",
+        "card-1": {
+          "name": "Yaroslav Pryymak",
+          "prof": "Managing Partner & CPO",
+          "text": "Chief Product Officer/ Market Strategist in Cybersecurity, Blockchain, Crypto, FinTech, AI & Big Data"
+        },
+        "card-2": {
+          "name": "Svitlana Skrypka",
+          "prof": "Project Manager & Cybersecurity Trainer",
+          "text": "Donor relations manager@Lviv IT Cluster // Co-founder@XSIGHT Cybersecurity"
+        },
+        "card-3": {
+          "name": "Alex Bilyi",
+          "prof": "Business Development Manager",
+          "text": "Business Growth. Empowering Startups for Sales Success. Key Account Sales, B2B  Leads in LinkedIn and Social Media. "
+        },
+        "card-4": {
+          "name": "Albert Hilber",
+          "prof": "Honorary Advisory Board Member",
+          "text": "Manager Upper Rhine 4.0 at Basel Area Business & Innovation"
+        },
+        "card-5": {
+          "name": "Christophe Walch",
+          "prof": "Honorary Advisory Board Member",
+          "text": "Entreprenuer, Angel Investor. Think Great! Who ever heard about Alexander the average?"
+        },
+        "card-6": {
+          "name": "Daniel Schmutz",
+          "prof": "Advisory Board Member",
+          "text": "Cyber Security Enthusiast @ Trend Micro | Channel Sales, Alliances, Marketing"
+        },
+        "card-7": {
+          "name": "Matthias von Arx",
+          "prof": "Advisory Board Member",
+          "text": "CExecutive Leader | ICT & Cyber Security Professional | Business Developer | Consultative & Value Seller | Strategist | Digitizer | Early Adopter"
+        },
+        "card-8": {
+          "name": "Christian Ulmer",
+          "prof": "Advisory Board Member",
+          "text": "Seasoned & transformational CISO"
+        }
+      },
+      "why-xsight": {
+        "title": "\nDie wichtigste Ressource im Bereich Cybersicherheit sind erfahrene und zuverlässige Fachleute. Unsere Experten verfügen über eine fundierte und authentische Erfahrung, die sie in anspruchsvollen Umgebungen gesammelt haben.",
+        "color-title": "ÜBER UNS",
+        "block-1": {
+          "title": "Warum Xsight?",
+          "text": "<p>Angesichts der wachsenden Bedrohung durch Cyberangriffe ist es entscheidend, dass Unternehmen proaktive Maßnahmen ergreifen, um sich zu schützen. XSIGHT Cybersecurity bietet eine umfassende Palette von Cybersicherheitsdiensten, um Unternehmen im digitalen Zeitalter sicher zu halten.</p><p>Modulares Cybersicherheitssystem - Wir verfügen über Kenntnisse über eine Vielzahl von Tools und haben die Fähigkeiten, die besten für Ihren speziellen Fall auszuwählen. Dafür benötigen wir einige Details, um dies zu tun, daher beginnen wir mit spezifischen Überprüfungen und Audits.</p>"
+        },
+        "block-2": {
+          "title": "Angebot",
+          "text": "XSIGHT Cybersecurity bietet einen modularen Ansatz für Cybersicherheitsdienstleistungen an, darunter Penetrationstests, Vorfallreaktion, Überprüfung von Sicherheitsrichtlinien, permanenter Schutz (Security Operations Center) und Cybersicherheitsschulungen, Zertifizierung & Compliance-Unterstützung. Unser Managementteam besteht aus erfahrenen Fachleuten im Bereich Cybersicherheit, Finanzen und Bildung, darunter zertifizierte ethische Hacker, Sicherheitsexperten und Vorfallreaktionsspezialisten. Wir verwenden branchenübliche Tools und Technologien für unsere Dienstleistungen und haben einen angemessenen Vorfallreaktionsplan implementiert. "
+        },
+        "block-3": {
+          "title": "Ziel",
+          "text": "Unser Ziel ist es, unseren Kunden dabei zu helfen, branchenübliche Best Practices und gesetzliche Vorschriften für Cybersicherheit zu erfüllen und gleichzeitig einen hervorragenden Kundenservice zu bieten. Durch kontinuierliche Verbesserung unserer Dienstleistungen und ständiges Up-to-Date-Bleiben mit den neuesten Branchentrends und Technologien streben wir danach, uns als führender Anbieter von Cybersicherheitslösungen in der Region zu etablieren. Unser Ziel ist es, ein vertrauenswürdiger Partner für unsere Kunden zu sein, um ihre sensiblen Daten und Systeme sicher und geschützt zu halten. "
+        }
+      }
+    },
+    "Services": {
+      "title": "Cybersicherheitslösungen",
+      "color-title": "UNSERE DIENSTLEISTUNGEN",
+      "service-1": "CYBERSICHERHEITSAUDITS",
+      "service-2": "VULNERABILITY-SCANNING-DIENST",
+      "service-3": "PENETRATIONSTEST-DIENSTLEISTUNGEN",
+      "service-4": "RED-TEAMING-DIENSTLEISTUNGEN",
+      "service-5": "UNTERSTÜTZUNG BEI COMPLIANCE & ZERTIFIZIERUNG",
+      "service-6": "SICHERHEITSSCHULUNGEN",
+      "service-7": "SICHERHEITSBETRIEBSZENTRUM (SOC)",
+      "service-8": "INCIDENT RESPONSE & WIEDERHERSTELLUNG",
+      "service-9": "AD-HOC NOTFÄLLE"
+    },
+    "Contact": {
+      "title": "Kontaktiere",
+      "animation": "uns",
+      "title-2": "Sure, I'm here to help. What seems to be the problem?",
+      "item-1": {
+        "title": "Unsere Standorte"
+      },
+      "item-2": {
+        "title": "Wie können wir Ihnen helfen?"
+      }
+    }
+  },
+  "Services": {
+    "cybersecurity-audits": {
+      "title": "CYBERSICHERHEITSAUDITS",
+      "description": "Wenn Ihr Unternehmen mit sensiblen Daten arbeitet, sie speichert, verarbeitet oder überträgt, sind Cybersicherheitsaudits unerlässlich, und dies ist ein idealer Ausgangspunkt, um Ihnen bei der Priorisierung der Risiken des Unternehmens zu helfen, einen Cybersicherheits-Fahrplan festzulegen, Ihre Schutzstrategie zu verbessern, Kosten zu sparen und der Konkurrenz voraus zu sein...",
+      "text": "<p>Audits bieten eine umfassende Bewertung des Sicherheitsstatus eines Unternehmens, identifizieren potenzielle Schwachstellen und helfen Ihnen, die erforderlichen Schritte zum Schutz der wertvollen Unternehmensinformationen zu ergreifen.</p>\n<p>Cybersicherheitsaudits können sicherstellen, dass Ihr Unternehmen Branchenstandards und -vorschriften erfüllt und sich gleichzeitig vor böswilligen Akteuren schützt, die Schwachstellen in Ihrer Netzwerkinfrastruktur ausnutzen möchten. Mit regelmäßigen Audits können Sie auch Kosten sparen, indem Sie Sicherheitsprobleme proaktiv angehen, bevor sie zu ernsteren Problemen werden. Audits können für das gesamte Unternehmen oder den ausgewählten funktionalen Teil bereitgestellt werden, wenn dies gewünscht wird.</p>\n<p>Bei uns erhalten Sie einen personalisierten Service, da wir die gleiche Sprache wie unsere Kunden sprechen, und es ist Ihr Ziel und Ihre Expertise, eine sichere Umgebung aufrechtzuerhalten, damit Ihr Team sich auf die Bereitstellung von Dienstleistungen und Produkten konzentrieren kann, ohne sich um Cyberbedrohungen sorgen zu müssen.</p>",
+      "result": "Ergebnisse für Sie:",
+      "content": {
+        "content-1": {
+          "title": "Cybersicherheits-Scan, personalisiert, kostenlos",
+          "text": "Welche Cybersicherheitsprobleme und Risiken für Ihre Organisation heute relevant sein könnten, hängt von der sich täglich verändernden Situation ab. Das Verständnis des Basisniveaus der Risiken ist wichtig. Wir nutzen Tools mit kombinierten Techniken, um die Angriffsfläche Ihrer Organisation, bestehend aus Benutzern, Vermögenswerten und Diensten, zu kartieren. Dadurch können Sie Risiken schnell verstehen und priorisieren sowie eine Grundlage schaffen, um eine verbesserte Sicherheitsstrategie zu entwickeln.",
+          "list": "Um eine Karte Ihrer System-Schwachstellen zu erhalten."
+        },
+        "content-2": {
+          "title": "IT-Infrastruktur-Cybersicherheitsaudit",
+          "text": "IT-Infrastruktur-Cybersicherheitsaudits beinhalten in der Regel eine Überprüfung der internen Infrastruktur, der Cloud-Systeme, der APIs und der Datenübertragungsprozesse Ihrer Organisation. Dies kann eine Überprüfung der Netzwerkarchitektur, der Firewall-Konfigurationen, der Zugriffskontrollen und anderer Sicherheitsmaßnahmen umfassen, die implementiert wurden, um sich gegen Cyberbedrohungen zu schützen. Unser Audit-Team kann auch die Wirksamkeit dieser Maßnahmen testen, indem es versucht, die Systeme der Organisation durch simulierte Angriffe zu durchbrechen. Wir verfügen über Kenntnisse verschiedener Tools und die Fähigkeiten, die besten für Ihren Fall auszuwählen.",
+          "list": "Eine Karte der internen Infrastruktur, Clouds, APIs und Datenübertragungen usw."
+        },
+        "content-3": {
+          "title": "Audit der Cybersicherheitsrichtlinien",
+          "text": "Neben einer IT-Infrastrukturprüfung kann ein Cybersicherheitsaudit auch eine Bewertung der Cybersicherheitsrichtlinien Ihrer Organisation umfassen. Dies kann eine Überprüfung der rechtlichen und geschäftlichen Umgebung, in der das Unternehmen tätig ist, sowie eine Bewertung der Datenflüsse innerhalb der Organisation beinhalten. Unser Auditor kann aktuelle Compliance-Prozesse und Richtlinien überprüfen, um festzustellen, ob sie auf dem neuesten Stand sind und effektiv dazu beitragen, Risiken zu minimieren. Dabei haben wir umfangreiche Erfahrung darin, Unternehmen beim Aufbau benutzerfreundlicher, aber effektiver Prozesse und Richtlinien zu unterstützen.",
+          "list": "Bewertung der rechtlichen, geschäftlichen Umgebung und Datenflüsse, des aktuellen Compliance-Prozesses "
+        }
+      }
+    },
+    "vulnerability-scanning-service": {
+      "title": "VULNERABILITY-SCANNING-DIENST",
+      "description": "Abhängig von der Größe des Unternehmens und der Komplexität der IT-Systeme kann es klug sein, automatisierte Checks mit manueller Überprüfung zu nutzen, um Zeit zu sparen und Kosten im Vergleich zu teureren Dienstleistungen wie Penetrationstests und umfassenden Audits zu reduzieren. Lassen Sie uns zuerst die einfachen Dinge überprüfen!",
+      "result": "Ergebnisse für Sie:",
+      "content": {
+        "content-1": {
+          "title": "Vulnerability scanning with manual verification",
+          "text": "<p>Wenn Sie Informationen schnell, aber effektiv erhalten müssen, wird unser erfahrenes Team das am besten geeignete Tool für Ihre Infrastruktur und Aufgaben auswählen, um schnelle und verifizierte, handlungsfähige Berichte über die Ergebnisse bereitzustellen. Durch die Meldung potenzieller Schwächen und Sicherheitslücken können Sie die Einhaltung gesetzlicher und branchenspezifischer Anforderungen sicherstellen, das Risiko minimieren und Ihre allgemeine Sicherheitslage verbessern.</p>\n<p>Die Schwachstellensuche ist eine Sicherheitsbewertung, die automatisierte Tools verwendet, um Schwachstellen in Computersystemen, Netzwerken oder Webanwendungen zu identifizieren. Das Ziel der Schwachstellensuche ist es, Ihnen umfassende Informationen über die Risiken bereitzustellen, denen Ihr Unternehmen heute gegenübersteht, und potenzielle Sicherheitsschwachstellen zu identifizieren, bevor ein Angreifer sie ausnutzen kann.</p>\n<p>Wir verfügen über Kenntnisse und Erfahrungen mit einer Vielzahl von Tools und haben die Fähigkeiten, die besten für Ihren Fall auszuwählen. Wir fügen manuelle Überprüfungen zur Schwachstellensuche hinzu, um die wertvollsten Ergebnisse zu erzielen. Mit den Ergebnissen in der Hand können Sie Maßnahmen ergreifen und Kosten sparen, indem Sie Sicherheitsprobleme proaktiv angehen, bevor sie zu ernsteren Problemen werden.</p>\n<p>Obwohl die Schwachstellensuche eine wichtige Sicherheitsmaßnahme ist, reicht sie nicht aus, um einen vollständigen Schutz zu gewährleisten. Um den ständig wachsenden Bedrohungen durch Cyberangreifer und ihre Werkzeuge einen Schritt voraus zu sein, sind regelmäßige Penetrationstests, Cyberangriffssimulationen (Red Teaming) und regelmäßige Audits unerlässlich, um eine sichere Umgebung aufrechtzuerhalten.</p>\n<p>Regelmäßige Überprüfungen und kontinuierliches Monitoring sind der Schlüssel, um Ihr Netzwerk vor bösartigen Eindringlingen zu schützen, und mit unseren Fähigkeiten und unserem flexiblen, iterativen Ansatz haben Sie einen besseren Schutz mit weniger Stress.</p>",
+          "list-1": "detailed report with vulnerability findings",
+          "list-2": "the severity and CVSS scoring for each finding",
+          "list-3": "basic review by the engineering team",
+          "list-4": "recommendations for fix"
+        }
+      }
+    },
+    "penetration-testing-services": {
+      "title": "PENETRATIONSTEST-DIENSTLEISTUNGEN",
+      "description": "Möchten Sie Ihre Kunden davon überzeugen, dass die Zusammenarbeit mit Ihnen sicher ist?! Wir bieten eine Reihe von internen und externen Penetrationstests sowie Social Engineering-Tests an, um Ihnen einen umfassenden Überblick über Ihren Sicherheitsstand zu geben.",
+      "text": "<p>Wenn Sie eine komplexe IT-Struktur haben und mobile/webbasierte Anwendungen, APIs usw. verwenden, reichen automatisierte Tools wie sie bei der Schwachstellensuche eingesetzt werden, nicht aus, um Schwachstellen auf allen Ebenen zu erkennen.</p>\n<p>Wir empfehlen die Durchführung umfassender Penetrationstests, bei denen ein simulierter Angriff auf ein Computersystem, ein Netzwerk, eine mobile oder webbasierte Anwendung durchgeführt wird, um Sicherheitsschwachstellen zu identifizieren und zu bewerten. Diese Technik hilft Ihnen, Schwachstellen zu identifizieren und die Sicherheit Ihrer Systeme auf einer tieferen und fokussierteren Ebene zu bewerten.</p>\n<p>Unser Team erfahrener Sicherheitsexperten wird mit Ihnen zusammenarbeiten, um Schwachstellen zu identifizieren, handlungsfähige Empfehlungen zur Behebung zu geben und nach vorgenommenen Änderungen erneute Tests durchzuführen.</p>",
+      "result": "Ergebnisse für Sie:",
+      "content": {
+        "content-1": {
+          "title": "Externer Penetrationstest",
+          "text": "<p>Unsere Penetrationstester suchen gezielt nach Schwachstellen in Ihren Systemen, die automatisierte Tools nicht erkennen oder ausnutzen können. Dazu gehören Informationsbeschaffung und die Suche nach Informationen, um Systeme zu identifizieren, die frei im Internet verfügbar sind.</p>\n<p>Diese verfügbaren Systeme repräsentieren die exponierte Angriffsfläche, die grundsätzlich jedem anonymen Angreifer über das Internet zugänglich ist. Weitere spezifische Tests werden je nach zuvor identifizierten Diensten angepasst und durchgeführt.</p>",
+          "list-1": "Detaillierter Bericht über die Ergebnisse",
+          "list-2": "Extern entdeckte Assets",
+          "list-3": "Informationen über Risikoschwere und Ausbeutungspfad",
+          "list-4": "Informationen zur Behebung von Schwachstellen",
+          "list-5": "Nachprüfung nach Behebung der Probleme"
+        },
+        "content-2": {
+          "title": "Penetrationstest für mobile Apps",
+          "text": "Wenn Ihr Unternehmen auf mobile Lösungen angewiesen ist, empfehlen wir dringend, angemessene Sicherheitsmaßnahmen zu implementieren, um Anwendungen vor bösartigen Angriffen als oberste Priorität zu schützen. ",
+          "list-1": "Detaillierter Bericht über die Ergebnisse basierend auf OWASP MSTG",
+          "list-2": "Informationen über Risikoschwere",
+          "list-3": "Empfehlungen zur Behebung von Schwachstellen",
+          "list-4": "Nachprüfung nach Behebung der Probleme"
+        },
+        "content-3": {
+          "title": "Penetrationstest für Webanwendungen",
+          "text": "<p>Wie oft überprüfen Sie die Sicherheit Ihrer Webanwendung?</p>\n<p>Unser erfahrenes Team verwendet die neuesten Methoden, um Ihre Webanwendung gründlich auf Sicherheitslücken und potenzielle Gefahren zu überprüfen. Von der Codeanalyse bis zur Kommunikationsüberprüfung lassen wir kein mögliches Risiko unberücksichtigt.</p>\n<p>Das Ergebnis unseres Webanwendungspenetrationstests liefert wertvolle Einblicke in den Sicherheitsstatus Ihrer Webanwendung, ihrer Infrastruktur und Daten. Mit diesen Informationen können Sie fundierte Entscheidungen über Risikoreduzierung und Behebungsstrategien treffen und Ihr Unternehmen vor Sicherheitsverletzungen, Daten Diebstahl und bösartigen Angriffen schützen. Wir werden Ihr System nach der Behebung erneut testen, um die Sicherheit des Systems zu bestätigen.</p>",
+          "list-1": "Detaillierter Bericht über die Ergebnisse basierend auf OWASP TOP 10",
+          "list-2": "Informationen über Risikoschwere",
+          "list-3": "Empfehlungen zur Behebung von Schwachstellen",
+          "list-4": "Nachprüfung nach Behebung der Probleme"
+        },
+        "content-4": {
+          "title": "Penetrationstest für APIs",
+          "text": "<p>APIs können eine potenzielle Gefahr für die vertraulichen Daten Ihres Unternehmens darstellen, wenn sie nicht regelmäßig überwacht und getestet werden, da sie es Angreifern ermöglichen, Sicherheitslücken auszunutzen und Zugriff auf Systeme zu erhalten.</p>\n<p>Im Rahmen des API-Penetrationstests führen unsere Spezialisten eine Reihe rigoroser Tests durch, um Bedrohungen und Schwachstellen in Ihrer API, Ihrer Infrastruktur und Ihrem Datentransfer zu identifizieren, und geben Ihnen einen umfassenden Einblick in potenzielle Risiken und helfen Ihnen, Ihre API-Umgebung zu sichern.</p>\n<p>Wir verwenden fortgeschrittene Techniken von der Codeanalyse bis zur Kommunikationsüberprüfung, um Sicherheitslücken aufzudecken, die bösartige Akteure ausnutzen könnten.</p>",
+          "list-1": "Detaillierter Bericht über die Ergebnisse basierend auf OWASP API Security",
+          "list-2": "Informationen über Risikoschwere",
+          "list-3": "Empfehlungen zur Behebung von Schwachstellen",
+          "list-4": "Nachprüfung nach Behebung der Probleme"
+        },
+        "content-5": {
+          "title": "Penetrationstest für das interne / Netzwerk-/ Büronetzwerk",
+          "text": "<p>In allen Vorfällen, bei denen es einen \"Patient Zero\" gibt - die erste kompromittierte Maschine - simuliert der interne Netzwerkpenetrationstest dieses Szenario und bietet Einblicke in die Navigation potenzieller Bedrohungsakteure im Netzwerk nach dem Einbruch.</p>\n<p>Letztendlich sollten interne Netzwerke sicher genug sein, damit bösartige Akteure sich nicht unbemerkt bewegen können, wenn sie Zugang zu einem einzelnen System erhalten. Das praktische Ergebnis eines internen Netzwerkpenetrationstests wäre der Bericht über festgestellte Schwachstellen, Empfehlungen zur Risikominderung und erneute Tests Ihrer Systeme, nachdem Ihr Team die erforderlichen Änderungen vorgenommen hat.</p>\n<p>All diese Schritte helfen, Sicherheitslücken mit geringeren Kosten in einem geplanten Zeitrahmen zu bewältigen und das Risiko von Vorfällen zu verringern.</p>",
+          "list-1": "Detaillierter Bericht über die Ergebnisse",
+          "list-2": "Extern entdeckte Assets und Netzwerkkarte",
+          "list-3": "Informationen über Risikoschwere und Ausbeutungspfad",
+          "list-4": "Informationen zur Behebung von Schwachstellen",
+          "list-5": "Nachprüfung nach Behebung der Probleme"
+        },
+        "content-6": {
+          "title": "E-Mail &Proxy-Dienste Audit",
+          "text": "<p>Inwieweit können Sie sicherstellen, dass nur der beabsichtigte Empfänger auf Ihre E-Mails zugreifen kann?</p>\n<p>Vertrauliche Geschäftsdaten müssen vor unbefugtem Zugriff geschützt und nur unter Verwendung sicherer Methoden übertragen werden. Unternehmen müssen auch die Compliance-Vorschriften wie die DSGVO, HIPAA und andere geltende Datenschutzgesetze einhalten.</p>\n<p>Eine Überprüfung der E-Mail- und Proxydienste trägt dazu bei, sicherzustellen, dass die Systeme optimal funktionieren, den Benutzern eine bessere Erfahrung bieten, Ausfallzeiten reduzieren und damit die Benutzererfahrung des Unternehmens verbessern. Schließlich muss auch die Netzwerkintegrität verwaltet werden, um eine konsistente Systemleistung zu gewährleisten. Überprüfungen der E-Mail- und Proxydienste bieten vorhandene Sicherheitsmaßnahmen gegen diese potenziellen Risiken und sind daher für Online-Unternehmen heute unerlässlich.</p>",
+          "list-1": "Detaillierter Bericht",
+          "list-2": "Informationen über Risiken",
+          "list-3": "Empfehlungen zur Behebung"
+        },
+        "content-7": {
+          "title": "Benutzer-Phishing-Simulation und Social Engineering Audit",
+          "text": "<p>Phishing war im Durchschnitt der kostspieligste initiale Angriffsvektor im Jahr 2022 und die dritthöchste durchschnittliche Zeit zur Identifizierung und Eindämmung bei 295 Tagen. Ein unvorbereiteter Mitarbeiter könnte monatelang der Ausgangspunkt für kostspielige Sicherheitsschäden sein.</p>\n<p>Die Phishing-Simulation/Social Engineering-Überprüfung simuliert Phishing-Angriffe. Dieser Ansatz sensibilisiert die Mitarbeiter für die neuesten Phishing-Bedrohungen, soziale Ingenieurstechniken und bösartige Aktivitäten. Diese Überprüfung bewertet den Sicherheitsstatus eines Unternehmens und misst die Reaktion und Vorbereitung von Mitarbeitern und Systemen. Die Überprüfung fördert eine Kultur der Sicherheitsbewusstsein bei den Mitarbeitern, was die Wahrscheinlichkeit erfolgreicher Phishing-Angriffe verringert und die allgemeine Benutzererfahrung verbessert.</p>\n<p>Die Überprüfung hilft Ihrem Unternehmen, die Bestimmungen zur Informationssicherheit und zum Datenschutz einzuhalten, wie z. B. PCI DSS, HIPAA usw.</p>",
+          "list-1": "Phishing-E-Mail-Testergebnisse",
+          "list-2": "Sensibilisierungsprogramm",
+          "list-3": "Schulungsprogramm",
+          "list-4": "Re-Test nach der Schulung"
+        },
+        "content-8": {
+          "title": "Cloud-Sicherheitsbewertung",
+          "text": "<p>Haben Sie das Potenzial der Cloud erkannt und begonnen, es in Ihren täglichen Aktivitäten zu nutzen?</p>\n<p>Die Kehrseite davon ist, dass die Cloud bei falscher Konfiguration auch Cybersicherheitsrisiken birgt. Laut dem Bericht \"The Cost of a Data Breach\" von IBM waren 45 % aller Datenverstöße cloud-basiert.</p>\n<p>Um das Risiko zu reduzieren und Ihre wertvollen Ressourcen zu sichern, empfehlen wir die Durchführung einer umfassenden Cloud-Sicherheitsbewertung, die die Cybersicherheitssysteme, -prozesse und -protokolle der Organisation auf Schwachstellen und Sicherheitslücken untersucht.</p>",
+          "list-1": "Risikobewertungsbericht",
+          "list-2": "Technische Details",
+          "list-3": "Re-Test nach der Behebung"
+        },
+        "content-9": {
+          "title": "ICS/SCADA security testing/OT (Operational technology) testing",
+          "text": "<p>Um die Geschäftskontinuität aufrechtzuerhalten, sind Cybersicherheitschecks für Betriebstechnologiesysteme (OT) genauso wichtig wie jede andere Art von Wartung und sollten regelmäßig durchgeführt werden.</p>\n<p>ICS/SCADA-Sicherheitstests/OT-Tests identifizieren und priorisieren Sicherheitsschwächen und -lücken in Ihren Betriebstechnologiesystemen (OT), sodass Sie diese beheben können, bevor sie ausgenutzt werden können. Ein Arbeitsplan zur Verbesserung kann als regelmäßige Wartung durchgeführt werden und ist im Vergleich zu den Risiken von OT-Systemen, die aufgrund von Cyberzwischenfällen ausfallen oder fehlerhaft funktionieren, mit geringeren Kosten verbunden.</p>",
+          "list-1": " Detaillierter Bericht über die Ergebnisse",
+          "list-2": "Extern entdeckte Vermögenswerte und Netzwerkplan",
+          "list-3": "Informationen über Schweregrad und Ausnutzungspfad des Risikos",
+          "list-4": "Informationen zur Behebung",
+          "list-5": "Re-Test nach Behebung der Probleme"
+        },
+        "content-10": {
+          "title": "Sicherheitstests für das Internet der Dinge (IoT)",
+          "text": "<p>Das Internet der Dinge (IoT) hat revolutioniert, wie wir leben und arbeiten, indem es eine stetig wachsende Anzahl von Geräten und Systemen verbindet. Allerdings besteht bei IoT-Geräten, die sensible Daten wie persönliche Informationen und geistiges Eigentum sammeln und übertragen und wichtige Prozesse verwalten, ein wachsendes Risiko von Fehlfunktionen, Datenverlusten und anderen unangenehmen Cyber-Vorfällen.</p>\n<p>Wenn Sie IoT-Geräte herstellen oder für geschäftliche Zwecke verwenden, empfehlen wir dringend regelmäßige Sicherheitstests, um Sicherheitsschwächen und -lücken in Ihren IoT-Geräten und -Systemen zu identifizieren. Dadurch können Sie diese Schwachstellen beheben, bevor sie ausgenutzt werden können.</p>",
+          "list-1": "Detaillierter Bericht der Ergebnisse",
+          "list-2": "Extern ermittelte Vermögenswerte und Netzwerkübersicht",
+          "list-3": "Informationen über Risikoschwere und Ausbeutungspfad",
+          "list-4": "Informationen zur Behebung der Schwachstellen",
+          "list-5": "Nachbesserungstest nach den Korrekturen"
+        }
+      }
+    },
+    "red-teaming-services": {
+      "title": "RED-TEAMING-DIENSTLEISTUNGEN",
+      "description": "Wie gut sind Ihre Sicherheitssysteme darauf vorbereitet, die wertvollsten Daten und Prozesse in realen Szenarien zu schützen? Durch die Simulation eines realen Cyberangriffs helfen wir dabei, Systeme und Ansätze anzupassen, um Daten und Systeme zu schützen, Standards einzuhalten und den Ruf Ihrer Marke zu wahren.",
+      "result": "Ergebnisse für Sie:",
+      "content": {
+        "content-1": {
+          "title": "Cyberangriffssimulation/Red Teaming/Advanced Persistent Threat (APT)-Simulation",
+          "text": "<p>Red Teaming (auch bekannt als Cyberangriffssimulation oder Advanced Persistent Threat (APT)-Simulation) ist ein simulierter Tiefenangriff, der darauf abzielt, die Sicherheitsposition und Reaktionsfähigkeiten eines Unternehmens zu testen.</p>\n<p>Red Teaming beinhaltet typischerweise ein Team von Sicherheitsexperten, die eine Vielzahl von Techniken und Tools einsetzen, um realitätsnahe Angriffe zu simulieren und die Verteidigung einer Organisation zu testen.</p>\n<p>Die Ergebnisse des Red Teamings werden verwendet, um Sicherheitsrichtlinien, -verfahren und -technologien zu verbessern und Mitarbeiter darin zu schulen, potenzielle Bedrohungen zu erkennen und darauf zu reagieren.</p>\n<p>Red Teaming ist ein tiefer simulierter Angriff oder eine umfassende Sicherheitsbewertung, die darauf abzielt, die Sicherheitsposition einer Organisation aus der Perspektive eines Angreifers herauszufordern.</p>\n<p>Es wird von hochqualifizierten White-Hat-Hackern durchgeführt, die die besten menschlichen Fähigkeiten, Erfahrungen und flexiblen Denkweisen nutzen, um ungewöhnliche Arbeitsabläufe zu entdecken, die unerwartete und schädliche Schäden verursachen können.</p>\n<p>Das Ziel des Red Teamings ist es, die Verteidigung einer Organisation zu identifizieren und zu testen sowie Schwachstellen aufzudecken, die ein Angreifer auf einer tiefen Detail- und technischen Perfektionsebene ausnutzen könnte.</p>",
+          "list-1": "Individuell gestaltete Cyberangriffsszenarien",
+          "list-2": "Bericht über den Angriffsweg",
+          "list-3": "Handlungsempfehlungen zur Verbesserung."
+        }
+      }
+    },
+    "compliance-and-certification-support": {
+      "title": "UNTERSTÜTZUNG BEI COMPLIANCE UND ZERTIFIZIERUNG",
+      "description": "Inwiefern sind Sie sicher, dass Ihre Organisation in der Lage ist, gegenwärtige und zukünftige Bedrohungen zu bewältigen? Nutzt Ihr Team alle Mittel, um das Vertrauen der Kunden aufzubauen? Wie können Sie Kunden nachweisen, dass Ihr Produkt sicher ist?",
+      "text": "<p>Zertifizierung und Compliance zielen darauf ab, sicherzustellen, dass die Informationssysteme einer Organisation gegen Cyberbedrohungen geschützt und gesichert sind und Kunden, Stakeholder und Regulierungsbehörden versichern, dass die Organisation angemessene Maßnahmen zum Schutz sensibler Informationen ergreift.</p><p>Mit Unterstützung Ihrer erfahrenen Spezialisten ist es möglich, Zertifizierungsaudits bereits beim ersten Versuch ohne Beanstandungen zu bestehen.</p>",
+      "ul": "Hauptmuster:",
+      "li-1": "Erfüllung gesetzlicher Vorschriften (z. B. DSGVO)",
+      "li-2": " Kunden mit Nachweisen über die Vertrauenswürdigkeit des Unternehmens oder Produkts versorgen",
+      "li-3": "Reduzierung von Versicherungsprämien",
+      "li-4": "Der erste Schritt, um das eigene Sicherheitsniveau zu verstehen und finanzielle Risiken zu reduzieren.",
+      "result": "Ergebnisse für Sie:",
+      "content": {
+        "content-1": {
+          "title": "Zertifizierungsunterstützung (EU GDPR, PCI-DSS, HIPAA, ISO 27001, SOC-2)",
+          "text": "<p>Gut gestaltete Compliance-Frameworks und -Prozesse helfen dabei, die Einhaltung branchenspezifischer Vorschriften schnell und effizient zu erreichen und bieten langfristige Vorteile zur Reduzierung des Risikos von Datenverstößen und anderen Sicherheitsbedrohungen.</p>\n<p>Zudem ist es eine Möglichkeit, das Vertrauen Ihrer Kunden hinsichtlich der ethischen Nutzung und des Schutzes ihrer Daten aufzubauen und die Gewissheit zu haben, dass Ihre sensiblen Informationen sicher sind.</p>\n<p>Mit unserem Engagement für diese Angelegenheit können Sie darauf abzielen, Zertifizierungen ohne Stress und Aufwand zu bestehen, und mit etablierten Prozessen wird die Zertifizierungserneuerung nahtlos verlaufen.</p>",
+          "list-1": "Bewertung der Zertifizierungslücken",
+          "list-2": "Ein Plan zur Erfüllung der Standards",
+          "list-3": "Implementierung der erforderlichen Sicherheitsprozesse und -tools mit Ihrem Team",
+          "list-4": "Entwicklung der für die Standards erforderlichen Sicherheitsrichtlinien",
+          "list-5": "Unterstützung bei der Zertifizierungsprüfung"
+        },
+        "content-2": {
+          "title": "Compliance-Audit (GDPR, PCI-DSS, HIPAA, ISO 27001, NIST Framework)",
+          "text": "Je nach Branche kann die Einhaltung von Sicherheitsstandards entweder ein Wettbewerbsvorteil oder eine unverzichtbare Voraussetzung für die Zusammenarbeit sein. In beiden Fällen steht Ihnen unser Team in allen Phasen zur Verfügung - von der Identifizierung von Lücken bis zur Entwicklung der Sicherheitsrichtlinien, die erforderlich sind, um ISO 27001, NIST, PCI DSS oder HIPAA zu erfüllen.",
+          "list-1": "Gap-Analyse",
+          "list-2": "Plan zur Erreichung der Einhaltung von Standards",
+          "list-3": "Erarbeitung der für die Standards erforderlichen Sicherheitsrichtlinien"
+        },
+        "content-3": {
+          "title": "Entwicklung von Cybersicherheitsrichtlinien und -verfahren",
+          "text": "<p>Immer mehr Kunden haben Bedenken hinsichtlich der Sicherheit bei der Speicherung und Verwendung ihrer persönlichen oder geschäftlichen Daten, ihrer Handelsgeheimnisse und der Verantwortung in der Lieferantenkette. Um unsere Kunden bei der Gewinnung des Vertrauens ihrer Kunden zu unterstützen, entwickeln wir individuelle Cybersicherheitsrichtlinien und -verfahren auf der Grundlage branchenüblicher Standards.</p>\n<p>Gut entwickelte Richtlinien und Verfahren bilden eine vernünftige Grundlage für langfristige Sicherheit, Einhaltung und Zertifizierung in der Zukunft.</p>\n<p>Die Vermeidung von Verschwendung ist einer unserer Schwerpunkte, und jede Aktivität zielt auf eine konkrete Lösung ab, um Ihre Sicherheit und Wettbewerbsvorteile gleichzeitig zu verbessern.</p>",
+          "list-1": "Entwicklung von Sicherheitsrichtlinien gemäß den ausgewählten Standards",
+          "list-2": "Erstellung von Sicherheitsdokumentationen, um den Anforderungen der Kunden gerecht zu werden"
+        },
+        "content-4": {
+          "title": "Sicherheitsrisikobewertung und -management",
+          "text": "<p>Organisationen, die vertrauliche Daten erstellen, speichern oder übertragen, sollten einer Risikobewertung unterzogen werden. Mehrere Gesetze, Vorschriften und Standards verlangen Risikobewertungen. Gleichzeitig liefert eine Sicherheitsrisikobewertung eine aktuelle Momentaufnahme der Bedrohungen und Risiken, denen Ihr Unternehmen ausgesetzt ist. Mit einem besser strukturierten Verständnis für Vermögenswerte und ihre Risiken können Sie informierte Entscheidungen über Richtlinien, Verfahren und Einhaltungsstufen von Regeln und Vorschriften treffen.</p>\n<p>Unser Team verfügt über Erfahrung in der Bereitstellung von Dienstleistungen für verschiedene Branchen, in verschiedenen Umgebungen und auf verschiedenen Ebenen der Cybersicherheit von Kunden. Mit unserer Unterstützung werden Sie die Risiken, denen Sie gegenüberstehen, besser kennen und wissen, wie Sie sie besser mindern können als mit weniger Ressourcen.</p>",
+          "list-1": "Bericht über Vermögenswerte und Risikoprofile ",
+          "list-2": "Risikominderungspolitik für jeden Vermögenswert basierend auf den Ergebnissen der Bewertung"
+        },
+        "content-5": {
+          "title": "Einrichten eines Sicherheitsbewusstseins-Programms und Schulung des Personals",
+          "text": "<p>Mit unserer Erfahrung entwickeln wir komplexe Programme, beginnend mit individuell gestalteten Phishing-Simulationen, gefolgt von grundlegenden Schulungsprogrammen für Mitarbeiter mit unterschiedlichen Kenntnisniveaus über IT-Systeme und abschließend mit einer zweiten Runde von Tests zur Bereitschaft für Phishing-Angriffe.</p>\n<p>Statistiken zeigen, dass die Fähigkeiten zur Cyber-Awareness alle vier Monate erneuert werden müssen, da es in der menschlichen Natur liegt, zu langfristigen Gewohnheiten zurückzukehren.</p>",
+          "list-1": "Ergebnisse des Phishing-E-Mail-Tests",
+          "list-2": "Individuell entwickeltes Sicherheitsbewusstseins-Programm",
+          "list-3": "Verbesserung der Fähigkeiten der Mitarbeiter in der Cyber-Hygiene"
+        },
+        "content-6": {
+          "title": "Entwicklung eines Sicherheitsplans für IT-Produkte",
+          "text": "<p>Die Sicherheitsrichtlinien, die dieser Plan festlegt, bilden die grundlegenden Leitlinien zum Schutz der mit Ihren IT-Produkten und -Dienstleistungen verbundenen Daten und bieten Ihren Kunden Sicherheit.</p>\n<p>Ein Sicherheitsplan für Informationsprodukte stellt sicher, dass nur autorisierte Benutzer auf die benötigten Informationen zugreifen können und dass das Produkt wie vorgesehen funktioniert. Der Sicherheitsplan für IT-Produkte umfasst wer, wann und wie der Zugriff auf Daten, die Übertragung und die Verarbeitung gesichert werden soll und dass Änderungen oder Updates am Produkt auf sichere und kontrollierte Weise durchgeführt werden.</p>",
+          "list-1": "Entwickelte Sicherheitsrichtlinien, die den ausgewählten Standards für das Produkt entsprechen.",
+          "list-2": "Entwickelter IT-Produktsicherheitsplan."
+        },
+        "content-7": {
+          "title": "Netzwerk- und Infrastruktursicherheit: Design und Implementierung",
+          "text": "<p>Das Design der Netzwerk- und Infrastruktursicherheit bildet das Fundament jeder Unternehmens-IT-Umgebung und schützt die zugrunde liegenden Netzwerke vor unbefugtem Zugriff, Änderung, Entfernung und Diebstahl.</p>\n<p>Mit besonderer Aufmerksamkeit für Details und die Entwicklungsstrategien Ihres Unternehmens können Sicherheitsmaßnahmen wie Firewalls, Intrusion Detection Systeme und Verschlüsselungsprotokolle den Zugriff einschränken, potenzielle Angriffe begrenzen und die Grundlage für eine erfolgreiche zukünftige Systemskalierung bilden.</p>",
+          "list-1": "Lückenbewertung (Gap Assessment)",
+          "list-2": "Netzwerk- und Infrastruktursicherheit Designplan und Unterstützung bei der Umsetzung"
+        }
+      }
+    },
+    "security-trainings": {
+      "title": "SICHERHEITSSCHULUNGEN",
+      "description": "Benutzer sind die erste Verteidigungslinie in der Cybersicherheit eines Unternehmens. Durch regelmäßige Schulungen können Sie teure Sicherheitsvorfälle verhindern und Branchenvorschriften einhalten.",
+      "text": "<p>Wir bieten umfassendes und angepasstes Sicherheitstraining für Unternehmen an, um Ihre Mitarbeiter im Erkennen und Reagieren auf Cyberbedrohungen zu schulen. Unser Training umfasst Schulungen zur Mitarbeitersicherheit, simulierten Phishing-Kampagnen und regelmäßige Sicherheitsbewusstseins-Newsletter.</p>\n<p>Cybersicherheitstraining sollte kontinuierlich sein und in das Cybersicherheitsprogramm der Organisation integriert werden.</p>\n<p>Die Schulung Ihrer Mitarbeiter zu den neuesten Bedrohungen und besten Praktiken kann das Risiko eines erfolgreichen Cyberangriffs verringern, die Cybersicherheitsposition der Organisation verbessern und Teil der Compliance-Verfahren sein.</p>",
+      "result": "Ergebnisse für Sie:",
+      "content": {
+        "content-1": {
+          "title": "Schulung zur Sensibilisierung für Cybersicherheit.",
+          "text": "Die Cybersecurity-Schulung ist eine wesentliche Komponente eines jeden Cybersecurity-Programms in einer Organisation. Sie hilft den Mitarbeitern, die tatsächlichen Risiken von Cyberbedrohungen zu verstehen und wie sie die Informationssysteme und Daten der Organisation schützen können.",
+          "list-1": "Angepasstes Schulungsprogramm zur Sensibilisierung für Sicherheit",
+          "list-2": "Verbesserte Fähigkeiten der Mitarbeiter in Bezug auf Cybersicherheit"
+        },
+        "content-2": {
+          "title": "Cyberhygiene, Phishing-Simulation und Anti-Social Engineering",
+          "text": "Ein gezieltes 3-Schritte-Programm, um Mitarbeiter zu schulen, Angriffsstrategien zu verstehen und bewährte Verfahren zur Sicherung sensibler Informationen anzuwenden.",
+          "list-1": "Individuell entwickelte Phishing-Simulation Angepasstes ",
+          "list-2": "Sicherheitssensibilisierungsprogramm mit Micro-Learning",
+          "list-3": "Ergebnisse der Wiederholungstests"
+        },
+        "content-3": {
+          "title": "Schulung von Führungskräften zur Sensibilisierung für Cybersicherheit",
+          "text": "Ein kurzes Programm, das speziell für Führungskräfte entwickelt wurde, um ihr Verständnis für drei Hauptbereiche zu verbessern: Cybersicherheit und Governance, Bedrohungen und Technologien sowie Risikomanagement und Analyse. Wir übersetzen Cybersicherheit von der technischen in die Geschäftssprache.",
+          "list-1": "Schulung, die an die Bedürfnisse und das Cybersicherheitsniveau von Unternehmen angepasst ist"
+        }
+      }
+    },
+    "security-operations-center": {
+      "title": "SICHERHEITSBETRIEBSZENTRUM (SOC)",
+      "description": "Wie verbessert man die Cybersicherheit mit vorhersehbaren Kosten und Aufwand? Bestellen Sie es als Service! Das Security Operations Center ist ein laufender Service - eine Mischung aus Werkzeugen, Schulungen und einem Expertenteam für jede Aufgabe. Wir helfen dabei, Risiken zu mindern, die Kosten des IT-Budgets zu reduzieren und kontinuierlich Regeln und Vorschriften einzuhalten.",
+      "text": "<p>Die Verwendung von ungleichmäßigen Best Practices und Tools könnte ein falsches Sicherheitsgefühl vermitteln und ist kontraproduktiv zur Verhinderung von Angriffen.</p>\n<p>Die Werkzeuge des Sicherheitsbetriebszentrums sammeln kontinuierlich Daten aus allen Netzwerken, integrieren und koordinieren verschiedene Sicherheitswerkzeuge und ermöglichen halb- oder vollautomatisierte \"Playbooks\", um auf potenzielle oder tatsächliche Bedrohungen zu reagieren. Das Training ist inklusive und konzentriert sich darauf, Gewohnheiten der Benutzer gegen soziale Ingenieurskunst zu formen. Der Haupterfolgsfaktor ist, dass unser Team Erfahrung in verschiedenen Branchen hat, in anspruchsvollen Umgebungen arbeitet und Daten vor realen Gegnern schützt.</p>\n<p>Die Teilnahme an unserem SOC verringert Ihren Bedarf, Entscheidungen über Prozesse, Architektur, Software, Reaktion und das Team zu treffen.</p>\n<p>Die Verringerung von Cybersicherheitsrisiken verschafft Ihrem Unternehmen einen Wettbewerbsvorteil. Während Mitbewerber aufgrund von Sicherheitsverletzungen die Preise erhöhen, haben Sie vorhersehbare Kosten und reduzierte Risiken (60% der Sicherheitsverletzungen von Organisationen führten zu Preiserhöhungen, die an die Kunden weitergegeben wurden. IBM The Cost of a Data Breach Report 2022).</p>\n<p>Um Risiken von Malware, Sicherheitsverletzungen und anderen Angriffen zu minimieren, sollten Sicherheitsüberprüfungen und Richtlinienverbesserungen kontinuierlich und aktuell sein. Mit unserem hybriden SOC profitieren Sie von dedizierten Experten und Flexibilität.</p>",
+      "result": "Ergebnisse für Sie:",
+      "content": {
+        "content-1": {
+          "title": "SOC als Service",
+          "text": "Unser Security Operations Center (SOC) Service bietet rund um die Uhr Überwachung und Bedrohungsanalyse, um Cyberbedrohungen in Echtzeit zu erkennen und darauf zu reagieren. Unsere erfahrenen Sicherheitsanalysten nutzen fortschrittliche Tools und Techniken, um Sicherheitsvorfälle zu erkennen und zu behandeln sowie forensische Analysen durchzuführen, um die Ursache eines Vorfalls zu verstehen. Mit unserem SOC-Service können Sie sicher sein, dass Ihr Unternehmen rund um die Uhr geschützt ist.\n"
+        },
+        "content-2": {
+          "title": "Endpunktsicherheit",
+          "text": "Wir bieten umfassende Endpoint-Security-Services an, um Ihre Geräte und Daten vor Cyberbedrohungen zu schützen. Unsere Services umfassen Antivirus- und Malware-Schutz, Geräteverschlüsselung und Mobile Device Management. Durch die Implementierung starker Endpoint-Security-Kontrollen können Sie das Risiko eines erfolgreichen Cyberangriffs reduzieren."
+        },
+        "content-3": {
+          "title": "Netzwerksicherheit",
+          "text": "Wir bieten umfassende Netzwerksicherheitsdienste, um Ihr Unternehmen vor Cyberbedrohungen zu schützen. Unsere Dienstleistungen umfassen die Konfiguration von Firewalls, die Erkennung und Verhinderung von Eindringlingen sowie die Einrichtung und Wartung von VPNs. Durch die Implementierung robuster Netzwerksicherheitskontrollen können Sie das Risiko erfolgreicher Cyberangriffe reduzieren."
+        },
+        "content-4": {
+          "title": "Cloud-Sicherheit",
+          "text": "Wir bieten umfassende Cloud-Sicherheitsdienste an, um Ihre Daten und Systeme in der Cloud zu schützen. Unsere Dienstleistungen umfassen sichere Cloud-Migration, die Implementierung eines Cloud Access Security Brokers (CASB) und die Sicherheit der Cloud-Infrastruktur. Durch die Implementierung starker Cloud-Sicherheitskontrollen können Sie das Risiko eines erfolgreichen Cyberangriffs verringern."
+        }
+      }
+    },
+    "incident-response-and-recovery": {
+      "title": "INCIDENT RESPONSE & RECOVERY",
+      "text": "Wir bieten Incident-Response- und Disaster-Recovery-Dienste an, um Ihnen bei einer Sicherheitsvorfällen schnell zu reagieren und sich zu erholen. Unsere Incident-Response-Dienste umfassen die Planung der Incident Response, die Ausführung der Incident Response und die Planung und Prüfung des Disaster Recovery. Mit unseren Incident-Response-Diensten können Sie die Auswirkungen von Sicherheitsvorfällen minimieren und so schnell wie möglich wieder zum normalen Geschäftsbetrieb zurückkehren."
+    },
+    "ad-hoc-emergiences": {
+      "title": "AD-HOC NOTFÄLLE",
+      "descriptions": "Wir verfügen über erstklassige Expertise, Erfahrung und Ressourcen, um Schäden schnell und effizient einzudämmen, die Ursache zu finden und Maßnahmen zu ergreifen, um zukünftige Vorfälle zu verhindern. Egal, ob es sich um eine Datenverletzung, eine Malware-Infektion oder einen anderen Sicherheitsvorfall handelt, wir haben die Expertise und Ressourcen, um Ihnen bei der Eindämmung der Schäden zu helfen, eine Wiederherstellung nach einem Desaster durchzuführen und Maßnahmen zu ergreifen, um zukünftige Vorfälle zu verhindern.",
+      "text": "<p>Die Notfallreaktion im Bereich der Cybersicherheit bezieht sich darauf, schnell und effektiv auf einen Cyberangriff oder ein anderes Sicherheitsereignis zu reagieren. Das Ergebnis der Notfallreaktion in der Cybersicherheit kann je nach Art und Schwere des Vorfalls variieren.</p><p>In vielen Fällen kann die Notfallreaktion dazu beitragen, Schäden durch einen Cyberangriff oder ein Sicherheitsereignis erfolgreich zu verhindern oder zu begrenzen. Organisationen können oft die schlimmsten Folgen eines Sicherheitsvorfalls vermeiden oder mildern, indem sie die Quelle des Angriffs identifizieren, Maßnahmen ergreifen, um den Angreifer zu blockieren oder einzudämmen, und Sicherheitsmaßnahmen implementieren, um ähnliche Vorfälle in Zukunft zu verhindern.</p><p>Unser Team verfügt über umfangreiche Erfahrung in der Arbeit unter den schwierigsten Bedingungen und im Schutz wertvoller Daten und Systeme vor Cyberangriffen. Es ist jedoch wichtig zu beachten, dass nicht alle Sicherheitsvorfälle vollständig verhindert oder gelöst werden können. Einige Angriffe können zum Verlust sensibler Daten, zur Störung kritischer Systeme oder Dienste oder zu anderen erheblichen Auswirkungen führen. In diesen Fällen besteht das Ziel der Notfallreaktion oft darin, die Schäden so weit wie möglich zu minimieren und einen Plan zur Wiederherstellung und Behebung zu entwickeln, und wir haben die Erfahrung, Ihnen dabei zu helfen.</p>",
+      "result": "Ergebnisse für Sie:",
+      "content": {
+        "content-1": {
+          "title": "Ermittlung & digitale Forensik",
+          "list-1": "Schwachstellen in der Verteidigung, sowohl in Technologien als auch in Prozessen"
+        },
+        "content-2": {
+          "title": "Wiederherstellung nach Katastrophen",
+          "list-1": "Wiederhergestellte Daten, wiederhergestellte kritische Systeme, gereinigte Umgebung"
+        },
+        "content-3": {
+          "title": "Rückentwicklung",
+          "list-1": "Quelle des Angriffs und verwendete Technologien, um den korrekten Präventionsplan zu erstellen"
+        }
+      }
+    }
+  }
 }

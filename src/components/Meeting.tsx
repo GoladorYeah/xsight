@@ -6,11 +6,11 @@ export default function Meeting() {
     const t = useTranslations('Buttons')
 
     return (
-        <div className="fixed bottom-7  lg:bottom-1/3  right-5 lg:right-4 z-20">
+        <div className="fixed bottom-7 right-5 lg:right-4 z-20">
             <div id="tooltip-animation" role="tooltip"
-                 className="relative hidden z-10 lg:inline-block px-4 py-4 text-xs font-medium text-white transition-opacity duration-300 bg-gray-600 rounded-lg shadow-sm mb-4">
+                 className="relative hidden z-10 lg:inline-block px-4 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-gray-600 rounded-lg shadow-sm mb-4">
 
-                <Link href="#" className="text-sm text-center text-white">
+                <Link href={"/meetings"} className="text-sm text-center text-white">
                     {t('QuickStart')}
                 </Link>
 
@@ -20,11 +20,10 @@ export default function Meeting() {
 
                 </div>
             </div>
-            <a data-modal-target="callbutton" data-modal-toggle="callbutton" className="cursor-pointer">
+            <Link href={"/meetings"} className="cursor-pointer">
                 <div className="relative flex h-16 w-16 mx-auto">
                     <span
                         className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75">
-
                     </span>
                     <div
                         className="relative inline-flex justify-center items-center rounded-full h-16 w-16 bg-sky-500">
@@ -51,7 +50,7 @@ export default function Meeting() {
                         </svg>
                     </div>
                 </div>
-            </a>
+            </Link>
 
         </div>
     )

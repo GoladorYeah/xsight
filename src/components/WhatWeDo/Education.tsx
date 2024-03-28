@@ -12,6 +12,7 @@ export default function Education() {
         {
             id: 1,
             title: t('items.item-1.title'),
+            link: 'services/compliance-and-certification-support',
             items: [
                 t('items.item-1.list-1'),
                 t('items.item-1.list-2')
@@ -20,6 +21,7 @@ export default function Education() {
         {
             id: 2,
             title: t('items.item-2.title'),
+            link: 'services/security-trainings',
             text: t('items.item-2.text'),
             items: [
                 t('items.item-2.list-1'),

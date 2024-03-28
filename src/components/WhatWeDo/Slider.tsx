@@ -11,6 +11,7 @@ interface Data {
     Data: Array<{
         id: number;
         title: string;
+        link: string;
         text?: string;
         items: Array<string>
     }>
@@ -53,7 +54,8 @@ function AutoPlay({Data}: Data) {
                                 ))}
                             </ul>
                             <div className="flex justify-center mt-4 space-x-3 md:mt-6">
-                                <Link href={"/services#adHock"}
+
+                                <Link href={'/' + data.link}
                                       className="px-5 py-2.5 font-medium bg-gray-600 hover:bg-gray-700 text-white rounded-lg text-sm transition-all">
                                     Learn More
                                 </Link>

@@ -36,7 +36,7 @@ export default function Standart() {
 
                 <div className="flex justify-center mt-4 space-x-3 md:mt-6">
                     {/* Button */}
-                    <Link href="#"
+                    <Link href={"/meetings"}
                           className="px-5 py-2.5 font-medium bg-gray-600 hover:bg-gray-700 text-white rounded-lg text-sm transition-all">
                         {tb('GetStarted')}
                     </Link>

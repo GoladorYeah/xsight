@@ -35,7 +35,7 @@ export default function Emergency() {
                         </div>
                     </div>
                     <div className="flex justify-center mt-4">
-                        <Link href={"/services#adHock"}
+                        <Link href={"/services/ad-hoc-emergiences"}
                               className="px-5 py-2.5 font-medium bg-gray-600 hover:bg-gray-700 text-white rounded-lg text-sm transition-all">
                             {tb('LearnMore')}
                         </Link>
