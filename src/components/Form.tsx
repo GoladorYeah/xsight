@@ -1,5 +1,5 @@
 'use client'
-
+import {MailerSend, EmailParams, Sender, Recipient} from "mailersend";
 import {useState} from 'react';
 import {z} from 'zod';
 import Background from "@/components/Background";
@@ -39,6 +39,7 @@ const ContactForm: React.FC = () => {
         try {
             schema.parse(formData);
             // Формируем текст письма
+
             const emailContent = `
             First Name: ${formData.firstName}
             Last Name: ${formData.lastName}
@@ -47,38 +48,25 @@ const ContactForm: React.FC = () => {
             Message: ${formData.message}
         `;
 
-            // Отправляем запрос на API Mailjet для отправки письма
-            const response = await fetch('https://api.mailjet.com/v3.1/send', {
-                mode: 'no-cors',
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Basic ${btoa('113a3ae14f9eee2aaad49eff077b93f1:abf54730f98037a6a61a4c96fa3ab6667')}`, // Замените api_key и api_secret на ваши ключи
-                },
-                body: JSON.stringify({
-                    Messages: [{
-                        From: {
-                            Email: 'info@xsight.ch', // Замените на ваш email
-                            Name: 'Xsight Cybersecurity'
-                        },
-                        To: [{
-                            Email: 'dispel063@gmail.com', // Замените на email получателя
-                            Name: 'Recipient Name'
-                        }],
-                        Subject: 'Contact Form Submission',
-                        TextPart: emailContent
-                    }]
-                }),
+            const mailerSend = new MailerSend({
+                apiKey: 'mlsn.9567b76f42d5dc8e03b958997af3647617f3050e0abf7014b452eca43a09b92b',
             });
 
-            if (response.ok) {
-                console.log('Email sent successfully!');
-                // После успешной отправки можно сбросить состояние формы
-                setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});
-                setErrors({});
-            } else {
-                console.error('Failed to send email');
-            }
+            const sentFrom = new Sender("info@xsight.ch", "Your name");
+
+            const recipients = [
+                new Recipient("dispel063@gmail.com", "Your Client")
+            ];
+
+            const emailParams = new EmailParams()
+                .setFrom(sentFrom)
+                .setTo(recipients)
+                .setReplyTo(sentFrom)
+                .setSubject("This is a Subject")
+                .setHtml("<strong>This is the HTML content</strong>")
+                .setText(emailContent);
+
+            await mailerSend.email.send(emailParams);
             console.log(formData);
             // После отправки формы можно сбросить состояние
             setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});
