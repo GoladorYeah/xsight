@@ -24,7 +24,7 @@ export default function ServicesPage() {
                             </Heading2>
                         </div>
                         <div
-                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center text-center gap-8 py-8">
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center text-center gap-8">
                             <div
                                 className="group border-2 border-orange-500 md:border-transparent  hover:border-orange-500 w-full relative rounded-md">
                                 <div
