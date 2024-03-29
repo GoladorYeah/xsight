@@ -48,24 +48,32 @@ const ContactForm: React.FC = () => {
             Message: ${formData.message}
         `;
 
-            const mailerSend = new MailerSend({
-                apiKey: 'mlsn.9567b76f42d5dc8e03b958997af3647617f3050e0abf7014b452eca43a09b92b',
+            // Отправляем запрос на API MailerSend для отправки письма
+            const response = await fetch('https://api.mailersend.com/v1/email', {
+                mode: 'no-cors',
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer mlsn.6a1ea9ac201c39da410a514ce25ee4197b992abfb5aeaecf57312f06c57d83f5`, // Замените YOUR_API_KEY на ваш ключ API MailerSend
+                },
+                body: JSON.stringify({
+                    to: [{
+                        email: 'dispel063@gmail.com', // Замените на email получателя
+                        name: 'Recipient Name'
+                    }],
+                    subject: 'Contact Form Submission',
+                    text: emailContent
+                }),
             });
 
-            const sentFrom = new Sender("info@trial-3zxk54vn6yxljy6v.mlsender.net", "Your name",);
-            const recipients = [
-                new Recipient("dispel063@gmail.com", "Your Client")
-            ];
-
-            const emailParams = new EmailParams()
-                .setFrom(sentFrom)
-                .setTo(recipients)
-                .setReplyTo(sentFrom)
-                .setSubject("This is a Subject")
-                .setHtml("<strong>This is the HTML content</strong>")
-                .setText(emailContent);
-
-            await mailerSend.email.send(emailParams);
+            if (response.ok) {
+                console.log('Email sent successfully!');
+                // После успешной отправки можно сбросить состояние формы
+                setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});
+                setErrors({});
+            } else {
+                console.error('Failed to send email');
+            }
             console.log(formData);
             // После отправки формы можно сбросить состояние
             setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});
