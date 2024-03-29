@@ -1,6 +1,8 @@
 import Image from "next/image";
 import {Link} from "@/navigation";
 import {useTranslations} from "next-intl";
+import HeadingColor from "@/components/ui/HeadingColor";
+import Heading2 from "@/components/ui/Heading2";
 
 export default function ServicesPage() {
 
@@ -11,14 +13,15 @@ export default function ServicesPage() {
         <main>
             <section className="bg-white card-service">
                 <div className="px-4 py-12 md:py-20 relative">
-                    <div className="max-w-7xl mx-auto">
+                    <div className="max-w-screen-xl mx-auto">
                         <div className="flex flex-col text-center mb-4">
-                            <h6 className="text-lg font-normal text-orange-500 tracking-widest">
-                                {t("color-title")}
-                            </h6>
-                            <h2 className="text-3xl sm:text-4xl lg:w-3/4 mx-auto  font-bold">
-                                {t("title")}
-                            </h2>
+                            <HeadingColor>
+                                {t('color-title')}
+                            </HeadingColor>
+
+                            <Heading2>
+                                {t('title')}
+                            </Heading2>
                         </div>
                         <div
                             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center text-center gap-8 py-8">
