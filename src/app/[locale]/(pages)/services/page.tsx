@@ -30,7 +30,7 @@ export default function ServicesPage() {
                                         src="/services/serv-1.png"
                                         alt="" width="170" height="158" priority={true}
                                         className="object-contain mx-auto"/>
-                                    <h5 className="mb-1 text-xl font-bold text-gray-900">
+                                    <h5 className="mb-1 text-lg font-bold text-gray-900">
                                         {t("service-1")}
                                     </h5>
                                     <div className="flex justify-center mt-4 space-x-3 md:mt-6">
@@ -49,7 +49,7 @@ export default function ServicesPage() {
                                         src="/services/serv-2.png"
                                         alt="" width="170" height="158"
                                         className="object-contain mx-auto"/>
-                                    <h5 className="mb-1 text-xl font-bold text-gray-900">
+                                    <h5 className="mb-1 text-lg font-bold text-gray-900">
                                         {t("service-2")}
                                     </h5>
 
@@ -69,7 +69,7 @@ export default function ServicesPage() {
                                         src="/services/serv-3.png"
                                         alt="" width="170" height="158"
                                         className="object-contain mx-auto"/>
-                                    <h5 className="mb-1 text-xl font-bold text-gray-900">
+                                    <h5 className="mb-1 text-lg font-bold text-gray-900">
                                         {t("service-3")}
                                     </h5>
                                     <div className="flex justify-center mt-4 space-x-3 md:mt-6">
@@ -88,7 +88,7 @@ export default function ServicesPage() {
                                         src="/services/serv-4.png"
                                         alt="" width="155" height="155"
                                         className="object-contain mx-auto"/>
-                                    <h5 className="mb-1 text-xl font-bold text-gray-900">
+                                    <h5 className="mb-1 text-lg font-bold text-gray-900">
                                         {t("service-4")}
                                     </h5>
                                     <div className="flex justify-center mt-4 space-x-3 md:mt-6">
@@ -107,7 +107,7 @@ export default function ServicesPage() {
                                         src="/services/serv-5.png"
                                         alt="" width="170" height="158"
                                         className="object-contain mx-auto"/>
-                                    <h5 className="mb-1 text-xl font-bold text-gray-900">
+                                    <h5 className="mb-1 text-lg font-bold text-gray-900">
                                         {t("service-5")}
                                     </h5>
                                     <div className="flex justify-center mt-4 space-x-3 md:mt-6">
@@ -126,7 +126,7 @@ export default function ServicesPage() {
                                         src="/services/serv-6.png"
                                         alt="" width="170" height="158"
                                         className="object-contain mx-auto"/>
-                                    <h5 className="mb-1 text-xl font-bold text-gray-900">
+                                    <h5 className="mb-1 text-lg font-bold text-gray-900">
                                         {t("service-6")}
                                     </h5>
                                     <div className="flex justify-center mt-4 space-x-3 md:mt-6">
@@ -146,7 +146,7 @@ export default function ServicesPage() {
                                         src="/services/serv-7.png"
                                         alt="" width="155" height="155"
                                         className="object-contain mx-auto"/>
-                                    <h5 className="mb-1 text-xl font-bold text-gray-900">
+                                    <h5 className="mb-1 text-lg font-bold text-gray-900">
                                         {t("service-7")}
                                     </h5>
 
@@ -167,7 +167,7 @@ export default function ServicesPage() {
                                         src="/services/serv-8.png"
                                         alt="" width="170" height="158"
                                         className="object-contain mx-auto"/>
-                                    <h5 className="mb-1 text-xl font-bold text-gray-900">
+                                    <h5 className="mb-1 text-lg font-bold text-gray-900">
                                         {t("service-8")}
                                     </h5>
                                     <div className="flex justify-center mt-4 space-x-3 md:mt-6">
@@ -186,7 +186,7 @@ export default function ServicesPage() {
                                         src="/services/serv-9.png"
                                         alt="" width="170" height="158"
                                         className="object-contain mx-auto"/>
-                                    <h5 className="mb-1 text-xl font-bold text-gray-900">
+                                    <h5 className="mb-1 text-lg font-bold text-gray-900">
                                         {t("service-9")}
                                     </h5>
                                     <div className="flex justify-center mt-4 space-x-3 md:mt-6">
