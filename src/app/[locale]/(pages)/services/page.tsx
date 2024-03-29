@@ -14,7 +14,7 @@ export default function ServicesPage() {
             <section className="bg-white card-service">
                 <div className="px-4 py-12 md:py-20 relative">
                     <div className="max-w-screen-xl mx-auto">
-                        <div className="flex flex-col text-center mb-4">
+                        <div className="flex flex-col text-center">
                             <HeadingColor>
                                 {t('color-title')}
                             </HeadingColor>
