@@ -25,7 +25,7 @@ export async function POST(req: Request | NextRequest, res: NextResponse) {
                 from: 'sent.mail@xsight.ch',
                 to: 'info@xsight.ch',
                 subject: 'Contact form',
-                text
+                text: "hi"
             });
 
             console.log('Email sent:', info.response);
