@@ -1,14 +1,12 @@
-import {NextApiRequest, NextApiResponse} from 'next';
 import nodemailer from 'nodemailer';
-import {NextRequest, NextResponse} from "next/server";
+import {NextResponse} from "next/server";
 
-async function POST(req: Request | NextRequest, res: NextResponse) {
-    console.log('Hi');
+export async function POST(req: Request) {
     if (req.method === 'POST') {
         // @ts-ignore
-        const {to, subject, text} = req.body;
+        const {message} = req.json(); // Предполагается, что ваша форма отправляет эти поля
 
-        // Create an SMTP transporter
+        // Создать SMTP транспорт
         const transporter = nodemailer.createTransport({
             host: 'smtp.protonmail.ch',
             port: 587,
@@ -20,25 +18,21 @@ async function POST(req: Request | NextRequest, res: NextResponse) {
         });
 
         try {
-            // Send email
+            // Отправить письмо
             const info = await transporter.sendMail({
                 from: 'sent.mail@xsight.ch',
                 to: 'info@xsight.ch',
                 subject: 'Contact form',
-                text: "hi"
+                text: `Получено новое сообщение: ${message}` // Здесь включены данные из формы
             });
 
-            console.log('Email sent:', info.response);
-            // @ts-ignore
-            await res.json({message: 'Email sent successfully'});
+            console.log('Письмо отправлено:', info.response);
+            NextResponse.json({message: 'Письмо успешно отправлено'});
         } catch (error) {
-            console.error('Error sending email:', error);
-            // @ts-ignore
-            await res.json({error: 'Failed to send email'});
+            console.error('Ошибка отправки письма:', error);
+            NextResponse.json({error: 'Не удалось отправить письмо'});
         }
     } else {
-        // @ts-ignore
-        await res.json({message: 'Error'});
+        NextResponse.json({error: 'Метод не разрешен'});
     }
-
 }
