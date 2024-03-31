@@ -1,12 +1,22 @@
 'use client'
-import {MailerSend, EmailParams, Sender, Recipient} from "mailersend";
+
 import {useState} from 'react';
 import {z} from 'zod';
-import Background from "@/components/Background";
 import {PhoneInput} from 'react-international-phone';
 import 'react-international-phone/style.css';
 import HeadingColor from "@/components/ui/HeadingColor";
 import Heading2 from "@/components/ui/Heading2";
+import {PhoneNumberUtil} from 'google-libphonenumber';
+
+const phoneUtil = PhoneNumberUtil.getInstance();
+
+const isPhoneValid = (phone: string) => {
+    try {
+        return phoneUtil.isValidNumber(phoneUtil.parseAndKeepRawInput(phone));
+    } catch (error) {
+        return false;
+    }
+};
 
 
 const schema = z.object({
@@ -48,24 +58,15 @@ const ContactForm: React.FC = () => {
             Message: ${formData.message}
         `;
 
-            // Отправляем запрос на API MailerSend для отправки письма
-            const response = await fetch('https://api.mailersend.com/v1/email', {
-                mode: 'no-cors',
+            const response = await fetch('/api/sendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer mlsn.6a1ea9ac201c39da410a514ce25ee4197b992abfb5aeaecf57312f06c57d83f5`, // Замените YOUR_API_KEY на ваш ключ API MailerSend
                 },
                 body: JSON.stringify({
-                    to: [{
-                        email: 'dispel063@gmail.com', // Замените на email получателя
-                        name: 'Recipient Name'
-                    }],
-                    subject: 'Contact Form Submission',
-                    text: emailContent
+                    text: emailContent,
                 }),
             });
-
             if (response.ok) {
                 console.log('Email sent successfully!');
                 // После успешной отправки можно сбросить состояние формы
@@ -76,8 +77,8 @@ const ContactForm: React.FC = () => {
             }
             console.log(formData);
             // После отправки формы можно сбросить состояние
-            setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});
-            setErrors({});
+            // setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});
+            // setErrors({});
         } catch (error) {
             if (error instanceof z.ZodError) {
                 const fieldErrors: { [key in keyof FormData]?: string } = {};
@@ -156,6 +157,8 @@ const ContactForm: React.FC = () => {
                                 onChange={phone => formData.phone = phone}
                                 required
                             />
+                            {isPhoneValid(formData.phone) &&
+                                <span className="text-red-600">{isPhoneValid(formData.phone)}</span>}
                         </div>
                     </div>
 
