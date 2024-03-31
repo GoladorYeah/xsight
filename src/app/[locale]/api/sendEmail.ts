@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 export async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
         const {to, subject, text} = req.body;
-
+        console.log('Hi');
         // Create an SMTP transporter
         const transporter = nodemailer.createTransport({
             host: 'smtp.protonmail.ch',
