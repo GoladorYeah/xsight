@@ -70,14 +70,6 @@ const ContactForm: React.FC = () => {
                     text: emailContent,
                 }),
             });
-            if (response.ok) {
-                console.log('Email sent successfully!');
-                // После успешной отправки можно сбросить состояние формы
-                setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});
-                setErrors({});
-            } else {
-                console.error('Failed to send email');
-            }
             console.log(formData);
             // После отправки формы можно сбросить состояние
             // setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});
