@@ -1,8 +1,8 @@
 import {NextApiRequest, NextApiResponse} from 'next';
 import nodemailer from 'nodemailer';
-import {NextRequest} from "next/server";
+import {NextRequest, NextResponse} from "next/server";
 
-async function POST(req: Request | NextRequest, res: NextApiResponse) {
+export async function POST(req: Request | NextRequest, res: NextResponse) {
     console.log('Hi');
     if (req.method === 'POST') {
         // @ts-ignore
@@ -29,14 +29,16 @@ async function POST(req: Request | NextRequest, res: NextApiResponse) {
             });
 
             console.log('Email sent:', info.response);
-            res.status(200).json({message: 'Email sent successfully'});
+            // @ts-ignore
+            await res.json({message: 'Email sent successfully'});
         } catch (error) {
             console.error('Error sending email:', error);
-            res.status(500).json({error: 'Failed to send email'});
+            // @ts-ignore
+            await res.json({error: 'Failed to send email'});
         }
     } else {
-        res.setHeader('Allow', ['POST']);
-        res.status(405).end(`Method ${req.method} Not Allowed`);
+        // @ts-ignore
+        await res.json({message: 'Error'});
     }
 
 }
