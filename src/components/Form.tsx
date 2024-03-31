@@ -61,7 +61,6 @@ const ContactForm: React.FC = () => {
         `;
 
             const response = await fetch(`/${locale}/api/sendEmail`, {
-                mode: 'no-cors',
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
