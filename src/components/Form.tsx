@@ -7,6 +7,7 @@ import 'react-international-phone/style.css';
 import HeadingColor from "@/components/ui/HeadingColor";
 import Heading2 from "@/components/ui/Heading2";
 import {PhoneNumberUtil} from 'google-libphonenumber';
+import {useLocale} from "next-intl";
 
 const phoneUtil = PhoneNumberUtil.getInstance();
 
@@ -30,6 +31,7 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 const ContactForm: React.FC = () => {
+    const locale = useLocale();
     const [formData, setFormData] = useState<FormData>({
         firstName: '',
         lastName: '',
@@ -58,7 +60,7 @@ const ContactForm: React.FC = () => {
             Message: ${formData.message}
         `;
 
-            const response = await fetch('/api/sendEmail', {
+            const response = await fetch(`\`${locale}\`/api/sendEmail`, {
                 mode: 'no-cors',
                 method: 'POST',
                 headers: {
