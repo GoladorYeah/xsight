@@ -2,7 +2,7 @@ import {NextApiRequest, NextApiResponse} from 'next';
 import nodemailer from 'nodemailer';
 import {NextRequest, NextResponse} from "next/server";
 
-export default async function POST(req: Request | NextRequest, res: NextResponse) {
+async function POST(req: Request | NextRequest, res: NextResponse) {
     console.log('Hi');
     if (req.method === 'POST') {
         // @ts-ignore
