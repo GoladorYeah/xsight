@@ -1,6 +1,8 @@
 import HeadingColor from "@/components/ui/HeadingColor";
 import Heading2 from "@/components/ui/Heading2";
 import {useTranslations} from "next-intl";
+import {Link} from "@/navigation";
+import Image from "next/image";
 
 export default function Team() {
 
@@ -98,9 +100,9 @@ export default function Team() {
                             className="block h-full rounded-lg bg-gray-200/75 shadow-lg">
                             <div className="flex justify-center">
                                 <div className="flex justify-center -mt-[75px]">
-                                    <img src={person.image}
-                                         className="mx-auto rounded-full shadow-lg w-[150px]"
-                                         alt="Avatar"/>
+                                    <Image src={person.image}
+                                           className="mx-auto rounded-full shadow-lg w-[150px]"
+                                           alt="Avatar" width={150} height={150}/>
                                 </div>
                             </div>
                             <div className="flex flex-col justify-between items-center p-6">
@@ -111,14 +113,14 @@ export default function Team() {
                                     {person.description}
                                 </p>
 
-                                <a href={person.link} target="_blank"
-                                   className="px-2 flex justify-center ">
+                                <Link href={person.link} target="_blank"
+                                      className="px-2 flex justify-center ">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                          className="h-3.5 w-3.5 text-primary dark:text-primary-400">
                                         <path fill="currentColor"
                                               d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
                                     </svg>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
