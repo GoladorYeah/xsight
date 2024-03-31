@@ -62,6 +62,9 @@ const ContactForm: React.FC = () => {
 
             const response = await fetch('/api/send-email', {
                 method: 'POST',
+                body: JSON.stringify({
+                    text: emailContent,
+                }),
             });
             console.log(formData);
             // После отправки формы можно сбросить состояние
