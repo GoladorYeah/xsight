@@ -13,10 +13,10 @@ export default function Page() {
                     <div
                         className="flex flex-col justify-center items-center w-full ">
                         <div className="flex flex-col justify-center text-center gap-y-2 mb-4">
-                            <h1 className="text-3xl sm:text-4xl font-semibold md:leading-snug">
+                            <h1 className="text-2xl sm:text-4xl font-semibold md:leading-snug">
                                 {t("title")}
                             </h1>
-                            <p className="text-balance max-w-screen-md text-sm  lg:text-lg">
+                            <p className="text-balance max-w-screen-md text-sm lg:text-lg mx-auto">
                                 {t("description")}
                             </p>
                         </div>
@@ -53,7 +53,7 @@ export default function Page() {
                                     <li> {t("content.content-2.list-1")}</li>
                                 </ul>
                             </div>
-                            
+
                         </div>
                         <div className="flex flex-col gap-y-2">
                             <h3 className="font-bold text-xl md:text-2xl text-balance mb-2">

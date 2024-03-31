@@ -13,7 +13,7 @@ export default function Page() {
                     <div
                         className="flex flex-col justify-center items-center w-full ">
                         <div className="flex flex-col justify-center text-center gap-y-2 mb-4">
-                            <h1 className="text-3xl sm:text-4xl font-semibold md:leading-snug">
+                            <h1 className="text-2xl sm:text-4xl font-semibold md:leading-snug">
                                 {t("title")}
                             </h1>
                         </div>
