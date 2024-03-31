@@ -60,7 +60,7 @@ const ContactForm: React.FC = () => {
             Message: ${formData.message}
         `;
 
-            const response = await fetch(`/\`${locale}\`/api/sendEmail`, {
+            const response = await fetch(`/${locale}/api/sendEmail`, {
                 mode: 'no-cors',
                 method: 'POST',
                 headers: {
