@@ -1,16 +1,15 @@
 import nodemailer from 'nodemailer';
-import {NextResponse} from "next/server";
+import {NextRequest, NextResponse} from "next/server";
 
 export async function POST(req: Request) {
     if (req.method === 'POST') {
         // @ts-ignore
-        const {message} = req.json(); // Предполагается, что ваша форма отправляет эти поля
+        const {messages} = await req.json(); // Предполагается, что ваша форма отправляет эти поля
 
         // Создать SMTP транспорт
         const transporter = nodemailer.createTransport({
             host: 'smtp.protonmail.ch',
             port: 587,
-            secure: true,
             auth: {
                 user: 'sent.mail@xsight.ch',
                 pass: 'HTLD42CDZNYLVWMF'
@@ -20,19 +19,20 @@ export async function POST(req: Request) {
         try {
             // Отправить письмо
             const info = await transporter.sendMail({
-                from: 'sent.mail@xsight.ch',
+                from: 'Xsight <sent.mail@xsight.ch>',
+                sender: 'Cyber',
                 to: 'info@xsight.ch',
                 subject: 'Contact form',
-                text: `Получено новое сообщение: ${message}` // Здесь включены данные из формы
+                html: messages // Здесь включены данные из формы
             });
 
             console.log('Письмо отправлено:', info.response);
-            NextResponse.json({message: 'Письмо успешно отправлено'});
+            return NextResponse.json({message: 'Письмо успешно отправлено'});
         } catch (error) {
             console.error('Ошибка отправки письма:', error);
-            NextResponse.json({error: 'Не удалось отправить письмо'});
+            return NextResponse.json({error: 'Не удалось отправить письмо'});
         }
     } else {
-        NextResponse.json({error: 'Метод не разрешен'});
+        return NextResponse.json({error: 'Метод не разрешен'});
     }
 }
