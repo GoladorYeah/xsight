@@ -60,15 +60,7 @@ const ContactForm: React.FC = () => {
             Message: ${formData.message}
         `;
 
-            const response = await fetch(`/api/sendEmail`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    text: emailContent,
-                }),
-            });
+            const response = await fetch(`/api/sendEmail`,);
             console.log(formData);
             // После отправки формы можно сбросить состояние
             // setFormData({firstName: '', lastName: '', email: '', phone: '', message: ''});
