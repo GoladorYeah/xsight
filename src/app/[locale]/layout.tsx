@@ -1,6 +1,8 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import clsx from 'clsx';
+import {GoogleAnalytics} from '@next/third-parties/google'
+
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -23,6 +25,7 @@ export default function LocaleLayout(
         <body className={clsx(inter.className, 'antialiased text-gray-900 text-medium')}>
         {children}
         </body>
+        <GoogleAnalytics gaId="G-MB758K0Y2T"/>
         </html>
     );
 }
