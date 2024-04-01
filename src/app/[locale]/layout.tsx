@@ -25,7 +25,7 @@ export default function LocaleLayout(
         <body className={clsx(inter.className, 'antialiased text-gray-900 text-medium')}>
         {children}
         </body>
-        <GoogleAnalytics gaId="G-MB758K0Y2T"/>
+        <GoogleAnalytics gaId="G-GFE5H7TG9E"/>
         </html>
     );
 }
