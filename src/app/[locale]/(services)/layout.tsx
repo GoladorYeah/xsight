@@ -1,5 +1,4 @@
 import NavbarBack from "@/components/Navbar/NavbarBack";
-import clsx from "clsx";
 
 export default function ServicesLayout(
     {

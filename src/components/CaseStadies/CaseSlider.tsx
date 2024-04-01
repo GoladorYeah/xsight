@@ -4,7 +4,6 @@
 import {Splide, SplideSlide} from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import IconShield from "@/components/Icons/IconShield";
-import {Link} from "@/navigation";
 
 import './module.css'
 

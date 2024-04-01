@@ -1,9 +1,6 @@
 'use client'
 
 import {useEffect} from "react";
-import BackButton from "@/components/ui/BackButton";
-import {ArrowLeft} from "lucide-react";
-import NavbarBack from "@/components/Navbar/NavbarBack";
 
 export default function Meetings() {
 

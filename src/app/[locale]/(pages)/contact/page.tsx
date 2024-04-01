@@ -1,7 +1,6 @@
 import {useTranslations} from 'next-intl';
 import Background from "@/components/Background";
 import {Link} from "@/navigation";
-import Image from "next/image";
 import {Mail, MapPin} from "lucide-react";
 
 export default function ContactPage() {

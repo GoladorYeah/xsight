@@ -1,6 +1,4 @@
 import WhyXsight from "@/components/WhyXsight";
-import HeadingColor from "@/components/ui/HeadingColor";
-import Heading2 from "@/components/ui/Heading2";
 import Background from "@/components/Background";
 import Image from "next/image";
 import {useTranslations} from "next-intl";

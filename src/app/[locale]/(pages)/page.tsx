@@ -8,7 +8,6 @@ import VerificationAudits from "@/components/WhatWeDo/VerificationAudits";
 import Education from "@/components/WhatWeDo/Education";
 import RoadMap from "@/components/RoadMap";
 import CaseStadies from "@/components/CaseStadies/CaseStadies";
-import Meeting from "@/components/Meeting";
 
 export default function Home() {
 
