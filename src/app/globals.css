@@ -109,3 +109,7 @@ a:active {
 lite-youtube {
     @apply rounded-xl max-w-[351px] max-h-[197px] md:max-h-full md:max-w-full
 }
+
+.youtube div {
+    @apply max-w-[351px] max-h-[197px] md:max-h-full md:max-w-full
+}
