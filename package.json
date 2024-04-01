@@ -12,6 +12,7 @@
     "@next/third-parties": "^14.1.4",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@vercel/speed-insights": "^1.0.10",
     "clsx": "^2.1.0",
     "google-libphonenumber": "^3.2.34",
     "lodash.pick": "^3.1.0",
