@@ -105,3 +105,7 @@ a:active {
 .react-international-phone-country-selector-button {
     @apply !h-full !rounded-l-lg max-h-[50px];
 }
+
+lite-youtube {
+    @apply rounded-xl max-w-[351px] max-h-[197px] md:max-h-full md:max-w-full
+}

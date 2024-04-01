@@ -30,9 +30,7 @@ export default function Ibm() {
                             </figure>
                         </div>
                         <figure className="flex justify-center">
-                            <YouTubeEmbed
-                                class="rounded-xl max-w-[351px] max-h-[197px] md:max-h-full md:max-w-full"
-                                videoid="3ouQs32MiZ8" width={447} height={251} params="controls=0"/>
+                            <YouTubeEmbed videoid="3ouQs32MiZ8" width={447} height={251} params="controls=0"/>
 
                             {/*<iframe className="rounded-xl max-w-[351px] max-h-[197px] md:max-h-full md:max-w-full"*/}
                             {/*        width="447"*/}
