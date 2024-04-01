@@ -1,14 +1,14 @@
 import Image from "next/image";
 import {Link} from "@/navigation";
 import Background from "@/components/Background";
-import HeadingColor from "@/components/ui/HeadingColor";
-import Heading2 from "@/components/ui/Heading2";
 import {useTranslations} from "next-intl";
+import {YouTubeEmbed} from '@next/third-parties/google'
 
 export default function Ibm() {
 
     const t = useTranslations('Ibm')
 
+    // @ts-ignore
     return (
         <section className="relative bg-gray-200/75 overflow-hidden">
             <Background align={"left"}/>
@@ -30,17 +30,18 @@ export default function Ibm() {
                             </figure>
                         </div>
                         <figure className="flex justify-center">
-                            {/*<Image className="rounded-xl brightness-90" src="/i4Challenge-closing-event.jpg" alt=""*/}
-                            {/*       width={407}*/}
-                            {/*       height={251}/>*/}
-                            <iframe className="rounded-xl max-w-[351px] max-h-[197px] md:max-h-full md:max-w-full"
-                                    width="447"
-                                    height="251"
-                                    src="https://www.youtube.com/embed/3ouQs32MiZ8?si=Ge3qxaOvLYm_Wg8D&amp;controls=0"
-                                    title="YouTube video player" frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
-                            </iframe>
+                            <YouTubeEmbed
+                                class="rounded-xl max-w-[351px] max-h-[197px] md:max-h-full md:max-w-full"
+                                videoid="3ouQs32MiZ8" width={447} height={251} params="controls=0"/>
+
+                            {/*<iframe className="rounded-xl max-w-[351px] max-h-[197px] md:max-h-full md:max-w-full"*/}
+                            {/*        width="447"*/}
+                            {/*        height="251"*/}
+                            {/*        src="https://www.youtube.com/embed/3ouQs32MiZ8?si=Ge3qxaOvLYm_Wg8D&amp;controls=0"*/}
+                            {/*        title="YouTube video player" frameBorder="0"*/}
+                            {/*        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"*/}
+                            {/*        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>*/}
+                            {/*</iframe>*/}
                         </figure>
                     </div>
                     <div
