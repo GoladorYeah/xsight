@@ -6,7 +6,7 @@ export default function Background({align}: any) {
 
     return (
         <figure className={positionClass}>
-            <Image className="star md:w-[1689px] md:h-[1262px]" src="/background.png" alt="Background" width={750}
+            <Image className="star md:w-[1689px] md:h-[1200px]" src="/background.png" alt="Background" width={750}
                    height={533}
                    priority={true}/>
         </figure>
