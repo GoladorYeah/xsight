@@ -4,7 +4,7 @@ import {NextRequest, NextResponse} from "next/server";
 export async function POST(req: Request) {
     if (req.method === 'POST') {
         // @ts-ignore
-        const {objectFormData} = await req.json(); // Предполагается, что ваша форма отправляет эти поля
+        const {firstName, lastName, email, phone, message} = await req.json(); // Предполагается, что ваша форма отправляет эти поля
         const messages = `
   <!DOCTYPE html>
   <html lang="en">
@@ -16,12 +16,12 @@ export async function POST(req: Request) {
   <body>
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
       <h2>Contact Form Submission</h2>
-      <p><strong>First Name:</strong> ${objectFormData.firstName}</p>
-      <p><strong>Last Name:</strong> ${objectFormData.lastName}</p>
-      <p><strong>Email:</strong> ${objectFormData.email}</p>
-      <p><strong>Phone:</strong> ${objectFormData.phone}</p>
+      <p><strong>First Name:</strong> ${firstName}</p>
+      <p><strong>Last Name:</strong> ${lastName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone:</strong> ${phone}</p>
       <p><strong>Message:</strong></p>
-      <p>${objectFormData.message}</p>
+      <p>${message}</p>
     </div>
   </body>
   </html>
