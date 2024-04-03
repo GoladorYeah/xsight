@@ -5,7 +5,6 @@ export async function POST(req: Request) {
     if (req.method === 'POST') {
         // @ts-ignore
         const {objectFormData} = await req.json(); // Предполагается, что ваша форма отправляет эти поля
-
         const messages = `
   <!DOCTYPE html>
   <html lang="en">

@@ -57,7 +57,7 @@ const ContactForm: React.FC = () => {
 
             const response = await fetch('/api/send-email', {
                 method: 'POST',
-                body: JSON.stringify(objectFormData),
+                body: JSON.stringify({objectFormData: formData}),
             });
             if (response.ok) {
                 console.log('Email sent successfully!');
