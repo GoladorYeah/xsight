@@ -53,33 +53,11 @@ const ContactForm: React.FC = () => {
         try {
             schema.parse(formData);
             // Формируем текст письма
-            const emailContent = `
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form Submission</title>
-  </head>
-  <body>
-    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-      <h2>Contact Form Submission</h2>
-      <p><strong>First Name:</strong> ${formData.firstName}</p>
-      <p><strong>Last Name:</strong> ${formData.lastName}</p>
-      <p><strong>Email:</strong> ${formData.email}</p>
-      <p><strong>Phone:</strong> ${formData.phone}</p>
-      <p><strong>Message:</strong></p>
-      <p>${formData.message}</p>
-    </div>
-  </body>
-  </html>
-`;
+
 
             const response = await fetch('/api/send-email', {
                 method: 'POST',
-                body: JSON.stringify({
-                    messages: emailContent
-                }),
+                body: JSON.stringify({objectFormData: formData}),
             });
             if (response.ok) {
                 console.log('Email sent successfully!');

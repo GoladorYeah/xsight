@@ -4,7 +4,30 @@ import {NextRequest, NextResponse} from "next/server";
 export async function POST(req: Request) {
     if (req.method === 'POST') {
         // @ts-ignore
-        const {messages} = await req.json(); // Предполагается, что ваша форма отправляет эти поля
+        const {objectFormData} = await req.json(); // Предполагается, что ваша форма отправляет эти поля
+
+        const messages = `
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Submission</title>
+  </head>
+  <body>
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+      <h2>Contact Form Submission</h2>
+      <p><strong>First Name:</strong> ${objectFormData.firstName}</p>
+      <p><strong>Last Name:</strong> ${objectFormData.lastName}</p>
+      <p><strong>Email:</strong> ${objectFormData.email}</p>
+      <p><strong>Phone:</strong> ${objectFormData.phone}</p>
+      <p><strong>Message:</strong></p>
+      <p>${objectFormData.message}</p>
+    </div>
+  </body>
+  </html>
+`;
+
 
         // Создать SMTP транспорт
         const transporter: Transporter = nodemailer.createTransport({
