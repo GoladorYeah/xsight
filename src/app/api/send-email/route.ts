@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+import nodemailer, {Transporter} from 'nodemailer';
 import {NextRequest, NextResponse} from "next/server";
 
 export async function POST(req: Request) {
@@ -7,8 +7,8 @@ export async function POST(req: Request) {
         const {messages} = await req.json(); // Предполагается, что ваша форма отправляет эти поля
 
         // Создать SMTP транспорт
-        const transporter = nodemailer.createTransport({
-            port: process.env.SMTP_PORT,
+        const transporter: Transporter = nodemailer.createTransport({
+            port: process.env.SMTP_PORT as number | undefined,
             host: process.env.SMTP_SERVER,
             auth: {
                 user: process.env.SMTP_USERNAME,
