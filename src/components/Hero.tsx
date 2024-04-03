@@ -18,7 +18,7 @@ export default function Hero() {
                             <br/>
                             <span
                                 className="text-animation md:leading-snug">
-                                {t('title-animation').toUpperCase()}
+                                {t('title-animation')}
                             </span>
                         </h1>
                         <div className="text-sm lg:text-lg text-balance mb-8">

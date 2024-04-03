@@ -10,11 +10,11 @@
   },
   "Hero": {
     "title": "cybersecurity",
-    "title-animation": "full protection",
+    "title-animation": "Full Protection",
     "text": "Xsight Cybersecurity - modular & adaptive solutions The Winner of i4Challenge 2022 by the Basel Innovation Area. IT & OT Сybersecurity, 24/7 protection by Hybrid SOC"
   },
   "Subscriptions": {
-    "title": "Unique mix OT & IT Cybersecurity in Our SOC Subscription Packages",
+    "title": "Unique mix OT & IT Cybersecurity in our Security Operations Center Subscription Packages",
     "color-title": "SUBSCRIBE FOR FULL SET OF MODULAR & ADAPTIVE SOLUTIONS",
     "Basic": {
       "title": "Basic Tier: for small entities",
@@ -223,17 +223,17 @@
         "card-1": {
           "name": "Yaroslav Pryymak",
           "prof": "Managing Partner & CPO",
-          "text": "Chief Product Officer/ Market Strategist in Cybersecurity, Blockchain, Crypto, FinTech, AI & Big Data"
+          "text": "Chief Product Officer, Market Strategist in Cybersecurity, Blockchain, Crypto, FinTech, AI & Big Data"
         },
         "card-2": {
           "name": "Svitlana Skrypka",
           "prof": "Project Manager & Cybersecurity Trainer",
-          "text": "Donor relations manager@Lviv IT Cluster // Co-founder@XSIGHT Cybersecurity"
+          "text": "Lviv IT Cluster, Co-founder in XSIGHT Cybersecurity"
         },
         "card-3": {
           "name": "Alex Bilyi",
           "prof": "Business Development Manager",
-          "text": "Business Growth. Empowering Startups for Sales Success. Key Account Sales, B2B  Leads in LinkedIn and Social Media. "
+          "text": "Business Growth, Empowering Startups for Sales Success, Key Account Sales, B2B Leads in LinkedIn and Social Media."
         },
         "card-4": {
           "name": "Albert Hilber",

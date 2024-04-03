@@ -14,7 +14,7 @@ export default function Subscriptions() {
         <section className="relative" id="modular">
             <div className="max-w-screen-xl px-3 py-16 md:py-24 mx-auto relative">
                 <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col text-center">
+                    <div className="flex flex-col text-center max-w-2xl mx-auto">
                         <HeadingColor>
                             {t('color-title')}
                         </HeadingColor>

@@ -10,11 +10,11 @@
   },
   "Hero": {
     "title": "CYBERSICHERHEIT",
-    "title-animation": "VOLLER SCHUTZ",
-    "text": "Xsight Cybersecurity - modulare & adaptive Lösungen. Der Gewinner des i4Challenge 2022 im Bereich Basel Innovation Area. IT- & OT-Cybersicherheit, 24/7-Schutz durch Hybrid-SOC"
+    "title-animation": "Umfassender Schutz",
+    "text": "Xsight Cybersecurity - modulare & adaptive Lösungen. Gewinner des i4Challenge 2022 im Bereich Basel Innovation Area. IT- & OT-Cybersicherheit, 24/7-Schutz durch Hybrid-SOC"
   },
   "Subscriptions": {
-    "title": "Ein EINZIGARTIGER MIX aus Cybersicherheit für OT & IT, der den besten SCHUTZ bietet",
+    "title": "Einzigartige Mischung von OT- und IT-Cybersicherheit in unseren Sicherheitsoperationszentrum - Abonnementpaketen",
     "color-title": "ABONNIEREN SIE FÜR DAS VOLLSTÄNDIGE SET AN MODULAREN UND ANPASSUNGSFÄHIGEN LÖSUNGEN",
     "Basic": {
       "title": "Basic Tier: for small entities",
@@ -211,7 +211,7 @@
   "Buttons": {
     "GetStarted": "Loslegen",
     "LearnMore": "Erfahren Sie mehr",
-    "QuickStart": "Schneller START"
+    "QuickStart": "Quick-Start"
   },
   "Pages": {
     "OurTeam": {
