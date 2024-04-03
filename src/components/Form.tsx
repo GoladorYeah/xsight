@@ -53,11 +53,11 @@ const ContactForm: React.FC = () => {
         try {
             schema.parse(formData);
             // Формируем текст письма
-
+            const objectFormData = formData;
 
             const response = await fetch('/api/send-email', {
                 method: 'POST',
-                body: JSON.stringify({objectFormData: formData}),
+                body: JSON.stringify(objectFormData),
             });
             if (response.ok) {
                 console.log('Email sent successfully!');
