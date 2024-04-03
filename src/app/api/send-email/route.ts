@@ -8,11 +8,11 @@ export async function POST(req: Request) {
 
         // Создать SMTP транспорт
         const transporter = nodemailer.createTransport({
-            host: 'smtp.protonmail.ch',
-            port: 587,
+            port: process.env.SMTP_PORT,
+            host: process.env.SMTP_SERVER,
             auth: {
-                user: 'sent.mail@xsight.ch',
-                pass: 'HTLD42CDZNYLVWMF'
+                user: process.env.SMTP_USERNAME,
+                pass: process.env.SMTP_TOKEN,
             }
         });
 
