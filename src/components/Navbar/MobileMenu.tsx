@@ -47,7 +47,7 @@ export default function MobileMenu({navLinks, navButton}: NavbarClientProps) {
                 <DrawerTrigger className="md:hidden"><Menu onClick={() => setIsOpen(!isOpen)}/></DrawerTrigger>
 
                 <DrawerContent>
-                    <DrawerHeader>
+                    <DrawerHeader className="mt-4">
                         <DrawerClose className="w-min">
                             <X onClick={handleMenuItemClick}/>
                         </DrawerClose>
