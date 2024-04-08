@@ -4,6 +4,8 @@ import {Link} from "@/navigation";
 import {Logo} from "@/components/Navbar/Logo";
 import LanguageSwitcher from "@/components/Navbar/LanguageSwitcher";
 import MobileMenu from "@/components/Navbar/MobileMenu";
+import {SquareArrowDown} from "lucide-react";
+import DropDownLogo from "@/components/Navbar/DropDawnLogo";
 
 export default function Navbar() {
 
@@ -25,9 +27,17 @@ export default function Navbar() {
             <div
                 className="max-w-screen-xl px-2.5 py-4 mx-auto flex items-center justify-between"> {/* For basic layout */}
                 {/* Logo */}
-                <Link href="/" className="flex">
-                    <Logo/>
-                </Link>
+                <div className="flex items-center gap-x-2">
+                    <Link href="/" className="flex">
+                        <Logo/>
+                    </Link>
+                    <div className="self-end">
+                        <DropDownLogo/>
+                    </div>
+
+
+                </div>
+
                 <div className="hidden md:flex items-center space-x-4">
                     <NavLinks navLinks={navLinks}/>
                     <Link href={"#adHock"}
