@@ -25,13 +25,13 @@ export default function Navbar() {
     return (
         <nav className="border-gray-200 sticky top-0 backdrop-blur-xl bg-white/50 shadow-md z-40">
             <div
-                className="max-w-screen-xl px-2.5 py-4 mx-auto flex items-center justify-between"> {/* For basic layout */}
+                className="max-w-screen-xl px-2.5 py-4 mx-auto flex items-center justify-between relative"> {/* For basic layout */}
                 {/* Logo */}
-                <div className="flex items-center gap-x-2">
+                <div className="flex items-center relative gap-x-2">
                     <Link href="/" className="flex">
                         <Logo/>
                     </Link>
-                    <div className="self-end">
+                    <div className="self-end relative">
                         <DropDownLogo/>
                     </div>
 

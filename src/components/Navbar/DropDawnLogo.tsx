@@ -13,7 +13,10 @@ import {Link} from "@/navigation";
 export default function DropDownLogo() {
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger><ArrowBigDownDash color="#767676" size={23}/></DropdownMenuTrigger>
+
+            <DropdownMenuTrigger className="relative"><ArrowBigDownDash className="relative top-1" strokeWidth={1.7}
+                                                                        color="#767676"
+                                                                        size={23}/></DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="bg-white mt-2">
                 <DropdownMenuItem>
                     <Link href="https://tech.xsight.ch" className="flex" target="_blank">
