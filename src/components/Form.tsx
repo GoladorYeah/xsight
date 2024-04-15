@@ -41,6 +41,7 @@ const ContactForm: React.FC = () => {
     });
     const [errors, setErrors] = useState<{ [key in keyof FormData]?: string }>({});
     const [loading, setLoading] = useState(false); // Состояние загрузки
+    const [isSubmitted, setIsSubmitted] = useState(false); // Добавляем состояние для отслеживания отправки формы
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const {name, value} = e.target;
@@ -68,6 +69,7 @@ const ContactForm: React.FC = () => {
                 console.error('Failed to send email');
             }
             setLoading(false);
+            setIsSubmitted(true); // Устанавливаем флаг отправки формы
         } catch (error) {
             if (error instanceof z.ZodError) {
                 const fieldErrors: { [key in keyof FormData]?: string } = {};
@@ -81,6 +83,12 @@ const ContactForm: React.FC = () => {
             }
             setLoading(false);
         }
+    };
+    // Функция для отображения сообщения об успешной отправке формы
+    const renderSuccessMessage = () => {
+        return (
+            <div className="text-green-600">Form submitted successfully!</div>
+        );
     };
 
     // @ts-ignore
@@ -162,13 +170,15 @@ const ContactForm: React.FC = () => {
                         />
                         {errors.message && <span className="text-red-600">{errors.message}</span>}
                     </div>
-                    <div className="flex justify-center mt-4 space-x-3 md:mt-6">
+                    <div className="flex flex-col items-center justify-center mt-4 space-x-3 md:mt-6">
                         <button
-                            className="px-5 py-2.5 font-medium bg-gray-600 hover:bg-gray-700 text-white rounded-lg text-sm transition-all"
+                            className="w-fit px-5 py-2.5 font-medium bg-gray-600 hover:bg-gray-700 text-white rounded-lg text-sm transition-all"
                             type="submit"
                             disabled={loading}>
                             {loading ? 'Sending...' : 'Submit Now'}
                         </button>
+                        {/* Проверяем, была ли форма отправлена */}
+                        {isSubmitted ? renderSuccessMessage() : null}
                     </div>
 
                 </form>
