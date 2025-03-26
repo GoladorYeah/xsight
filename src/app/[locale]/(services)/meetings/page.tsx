@@ -22,7 +22,7 @@ export default function Meetings() {
             <div className="max-w-screen-xl px-2.5 py-4 mx-auto">
                 <div
                     className="meetings-iframe-container"
-                    data-src="https://meetings-eu1.hubspot.com/xsight?embed=true"
+                    data-src="https://meetings-eu1.hubspot.com/xsight-n-a?embed=true"
                 ></div>
             </div>
         </div>
