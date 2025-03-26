@@ -25,21 +25,20 @@ export default function Hero() {
                             {t('text')}
                         </div>
                         <div className="flex flex-row gap-x-4 justify-center items-end">
-                            <Link href="https://innovate.baselarea.swiss/services/acceleration/i4-challenge/"
-                                  target="_blank">
+                            
                                 <Image className="mb-4 object-contain"
                                        src="/i4c.png"
                                        alt="Banner"
                                        width={250}
                                        height={250}/>
-                            </Link>
-                            <Link href="https://innovate.baselarea.swiss/" target="_blank">
+                            
+{/*                             <Link href="https://innovate.baselarea.swiss/" target="_blank">
                                 <Image className="mb-4 object-contain"
                                        src="/sip_basel_rgb.svg"
                                        alt="Banner"
                                        width={248}
                                        height={121}/>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
 
