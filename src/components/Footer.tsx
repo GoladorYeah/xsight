@@ -23,12 +23,12 @@ export default function Footer() {
                                 {t('home')}
                             </Link>
                         </li>
-                        <li className="mb-4">
+{/*                         <li className="mb-4">
                             <Link href={"/our-team"}
                                   className="drop-shadow-xl transition-all">
                                 {t('our-team')}
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                     <ul className="basis-1/4 mb-4 md:mb-0">
                         <li className="mb-4">
