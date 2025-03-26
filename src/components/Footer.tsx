@@ -29,14 +29,15 @@ export default function Footer() {
                                 {t('our-team')}
                             </Link>
                         </li> */}
-                    </ul>
-                    <ul className="basis-1/4 mb-4 md:mb-0">
-                        <li className="mb-4">
+                         <li className="mb-4">
                             <Link href={"/contact"}
                                   className="drop-shadow-xl transition-all">
                                 {t('contact')}
                             </Link>
                         </li>
+                    </ul>
+                    <ul className="basis-1/4 mb-4 md:mb-0">
+                       
                         <li className="mb-4">
                             <Link href={"/services"}
                                   className="drop-shadow-xl transition-all">
@@ -44,7 +45,7 @@ export default function Footer() {
                             </Link>
                         </li>
                     </ul>
-                    <ul className="basis-1/4 mb-4 md:mb-0">
+{/*                     <ul className="basis-1/4 mb-4 md:mb-0">
                         <li className="mb-4">
                             <Link href={"/privacy-policy"}
                                   className="drop-shadow-xl transition-all">
@@ -57,7 +58,7 @@ export default function Footer() {
                                 {t('terms-of-use')}
                             </Link>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
             <hr className="border-gray-200 sm:mx-auto"/>
