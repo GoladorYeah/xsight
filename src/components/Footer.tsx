@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <footer>
             <div className="max-w-screen-xl px-3 py-16 mx-auto relative overflow-x-hidden">
-                <div className="flex justify-center text-center items-center flex-col md:flex-row gap-x-12">
+                <div className="flex justify-between text-center items-center flex-col md:flex-row gap-x-12">
                     <div className="mb-6 basis-1/4 md:mb-0">
                         <Link href="/" className="flex">
                             <Image src="/logo-main.png"
