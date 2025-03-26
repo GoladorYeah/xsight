@@ -35,9 +35,6 @@ export default function Footer() {
                                 {t('contact')}
                             </Link>
                         </li>
-                    </ul>
-                    <ul className="basis-1/4 mb-4 md:mb-0">
-                       
                         <li className="mb-4">
                             <Link href={"/services"}
                                   className="drop-shadow-xl transition-all">
@@ -45,6 +42,10 @@ export default function Footer() {
                             </Link>
                         </li>
                     </ul>
+{/*                     <ul className="basis-1/4 mb-4 md:mb-0">
+                       
+                        
+                    </ul> */}
 {/*                     <ul className="basis-1/4 mb-4 md:mb-0">
                         <li className="mb-4">
                             <Link href={"/privacy-policy"}
