@@ -14,7 +14,7 @@ export default function LanguageChanger() {
 
     return (
         <>
-            <select className="cursor-pointer bg-inherit" value={curLocale} onChange={handleChange}>
+            <select className="cursor-pointer hidden bg-inherit" value={curLocale} onChange={handleChange}>
                 <option value="en">English</option>
                 <option value="de">Deutsch</option>
             </select>
