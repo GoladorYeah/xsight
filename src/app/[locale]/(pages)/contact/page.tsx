@@ -40,7 +40,7 @@ export default function ContactPage() {
                         </h2>
                         <div
                             className="flex flex-col md:flex-row items-start justify-center gap-y-12 md:gap-x-12 text-left text-gray-500">
-                            <div className="flex gap-x-2">
+{/*                             <div className="flex gap-x-2">
                                 <MapPin color="#fc7331" size={30}/>
                                 <div>
                                     <p className="font-semibold text-lg text-gray-900 mb-2">
@@ -51,7 +51,7 @@ export default function ContactPage() {
                                     <p>Switzerland</p>
                                 </div>
 
-                            </div>
+                            </div> */}
 
                             <div className="flex gap-x-2">
                                 <Mail size={30} color="#fc7331"/>
