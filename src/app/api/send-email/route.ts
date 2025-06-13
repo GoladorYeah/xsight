@@ -7,9 +7,10 @@ export async function POST(req: Request) {
             const {firstName, lastName, email, phone, message} = await req.json();
             
             const emailContent = {
-                from: 'XSight Contact Form <sent.mail@xsight.ch>',
+                from: 'XSight Contact Form <contact@xsight.ch>',
+                reply_to: email, // Ответ пойдет на email пользователя
                 to: ['yaroprima8@gmail.com'],
-                subject: 'New Contact Form Submission - XSight',
+                subject: `New Contact Form Submission from ${firstName} ${lastName}`,
                 html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9;">
                     <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
@@ -25,7 +26,7 @@ export async function POST(req: Request) {
                             </tr>
                             <tr style="background-color: #f8f9fa;">
                                 <td style="padding: 12px; border: 1px solid #dee2e6; font-weight: bold;">Email:</td>
-                                <td style="padding: 12px; border: 1px solid #dee2e6;"><a href="mailto:${email}">${email}</a></td>
+                                <td style="padding: 12px; border: 1px solid #dee2e6;">${email}</td>
                             </tr>
                             <tr>
                                 <td style="padding: 12px; border: 1px solid #dee2e6; font-weight: bold;">Phone:</td>
@@ -58,7 +59,8 @@ Sent on: ${new Date().toLocaleString()}
             };
 
             const userCopyContent = {
-                from: 'XSight Team <sent.mail@xsight.ch>',
+                from: 'XSight Cybersecurity <notifications@xsight.ch>',
+                reply_to: 'info@xsight.ch',
                 to: [email],
                 subject: 'Thank you for contacting XSight - We received your message',
                 html: `
@@ -136,7 +138,10 @@ Sent on: ${new Date().toLocaleString()}
                     ...emailContent,
                     headers: {
                         'X-Entity-Ref-ID': `contact-form-${Date.now()}`,
-                        'List-Unsubscribe': '<mailto:unsubscribe@xsight.ch>',
+                        'X-Mailer': 'XSight Contact System v1.0',
+                        'Organization': 'XSight Cybersecurity',
+                        'X-Priority': '1',
+                        'Importance': 'High'
                     }
                 }),
             });
@@ -152,7 +157,10 @@ Sent on: ${new Date().toLocaleString()}
                     ...userCopyContent,
                     headers: {
                         'X-Entity-Ref-ID': `contact-confirmation-${Date.now()}`,
-                        'List-Unsubscribe': '<mailto:unsubscribe@xsight.ch>',
+                        'X-Mailer': 'XSight Contact System v1.0',
+                        'Organization': 'XSight Cybersecurity',
+                        'X-Auto-Response-Suppress': 'All',
+                        'Precedence': 'bulk'
                     }
                 }),
             });
