@@ -7,7 +7,7 @@ export async function POST(req: Request) {
             const {firstName, lastName, email, phone, message} = await req.json();
             
             const emailContent = {
-                from: 'Xsight <onboarding@resend.dev>', // Замените на ваш домен
+                from: 'Xsight <sent.mail@xsight.ch>', // Замените на ваш домен
                 to: ['yaroprima8@gmail.com'],
                 subject: 'Contact Form Submission',
                 html: `
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
             };
 
             const userCopyContent = {
-                from: 'Xsight <onboarding@resend.dev>',
+                from: 'Xsight <sent.mail@xsight.ch>',
                 to: [email],
                 subject: 'Copy of Contact Form Submission',
                 html: `
