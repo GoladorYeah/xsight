@@ -8,15 +8,15 @@ export default function Footer() {
 
     return (
         <footer>
-            <div className="max-w-screen-xl px-3 py-16 mx-auto relative overflow-x-hidden">
+            <div className="max-w-screen-xl px-3 py-8 mx-auto relative overflow-x-hidden">
                 <div className="flex justify-start text-center items-center flex-col md:flex-row gap-x-12">
                     <div className="mb-6 basis-1/4 md:mb-0">
                         <Link href="/" className="flex">
                             <Image src="/logo-main.png"
-                                   className="object-contain h-full" width={250} height={162} alt="XSight Logo"/>
+                                   className="object-contain h-full" width={150} height={162} alt="XSight Logo"/>
                         </Link>
                     </div>
-                    <ul className="basis-1/4 mb-4 md:mb-0">
+                    <ul className="basis-2/4 flex flex-col sm:flex-row justify-between mb-4 md:mb-0">
                         <li className="mb-4">
                             <Link href={"/"}
                                   className="drop-shadow-xl transition-all">

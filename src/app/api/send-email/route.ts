@@ -65,7 +65,7 @@ export async function POST(req: Request) {
             const info = await transporter.sendMail({
                 from: 'Xsight <sent.mail@xsight.ch>',
                 sender: 'Cyber',
-                to: 'info@xsight.ch',
+                to: 'yaroprima8@gmail.com',
                 subject: 'Contact form',
                 html: messages // Здесь включены данные из формы
             });

@@ -60,11 +60,6 @@ export default function Ibm() {
                             </p>
                         </div>
                         <div className="border border-orange-500/50 mb-4 w-1/3"></div>
-                        <div className="flex flex-col items-center justify-center mb-4 md:mb-8">
-                            <Link href="https://sip-baselarea.com/" target="_blank" rel="noopener noreferrer">
-                                {t('link')}
-                            </Link>
-                        </div>
                     </div>
                 </div>
             </div>

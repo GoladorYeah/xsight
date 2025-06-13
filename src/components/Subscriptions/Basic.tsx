@@ -17,17 +17,23 @@ export default function Basic() {
                     alt="" width={155} height={155}
                     className="object-contain mx-auto"/>
                 <h5 className="mb-1 text-base md:text-lg font-semibold text-gray-900">
-                    {t('title')}
+                    Basic Tier: suits small companies
                 </h5>
                 <div>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-1')}
+                       - Digital Inventory Check
                     </p>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-2')}
+                       - Security Assessments
                     </p>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-3')}
+                       - Vulnerability management
+                    </p>
+                    <p className="text-sm md:text-base text-gray-500">
+                       - Cybersecurity Training
+                    </p>
+                    <p className="text-sm md:text-base text-gray-500">
+                       - Emergencies
                     </p>
                 </div>
                 <div className="flex justify-center mt-4 space-x-3 md:mt-6">

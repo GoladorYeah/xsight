@@ -36,7 +36,7 @@ export default function ContactPage() {
                         className="flex flex-col justify-center items-center text-center">
 
                         <h2 className="font-bold text-xl md:text-2xl text-balance mb-8">
-                            {t("title-2")}
+                            Let`s talk how to cut costs & increase protection
                         </h2>
                         <div
                             className="flex flex-col md:flex-row items-start justify-center gap-y-12 md:gap-x-12 text-left text-gray-500">
@@ -57,7 +57,6 @@ export default function ContactPage() {
                                 <Mail size={30} color="#fc7331"/>
                                 <div>
                                     <p className="font-semibold text-lg text-gray-900 mb-2">{t("item-2.title")}</p>
-                                    <Link href="mailto:info@xsight.ch">info@xsight.ch</Link>
                                 </div>
 
                             </div>

@@ -16,11 +16,11 @@ export default function Subscriptions() {
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col text-center max-w-2xl mx-auto">
                         <HeadingColor>
-                            {t('color-title')}
+                            FULL SET OF MODULAR & ADAPTIVE SOLUTIONS
                         </HeadingColor>
 
                         <Heading2>
-                            {t('title')}
+                            Unique Mix of OT & IT Cybersecurity for Every Business Sector
                         </Heading2>
                     </div>
                     <div

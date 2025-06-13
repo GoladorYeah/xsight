@@ -17,23 +17,23 @@ export default function Advanced() {
                     alt="" width={155} height={155}
                     className="object-contain mx-auto"/>
                 <h5 className="mb-1 text-base md:text-lg font-semibold text-gray-900">
-                    {t('title')}
+                    Advanced Tier: for any Corporate need
                 </h5>
                 <div>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-1')}
+                       - IT Asset Inventory Compliance (ISO 27001/NIST)
                     </p>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-2')}
+                       - 24/7 SOC deployment / Red Teaming
                     </p>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-3')}
+                       - Strategic Guidance
                     </p>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-4')}
+                       - Training & Knowlage sharing
                     </p>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-5')}
+                       - Significant Costs Cut
                     </p>
                 </div>
                 <div className="flex justify-center mt-4 space-x-3 md:mt-6">

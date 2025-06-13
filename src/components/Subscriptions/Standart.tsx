@@ -17,20 +17,23 @@ export default function Standart() {
                     alt="" width={155} height={155}
                     className="object-contain mx-auto"/>
                 <h5 className="mb-1 text-base md:text-lg font-semibold text-gray-900">
-                    {t('title')}
+                    Standard Tier: better for SME
                 </h5>
                 <div>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-1')}
+                       - IT Infrastructure Compliance Audit
                     </p>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-2')}
+                       - 24/7 monitoring and threat detection
                     </p>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-3')}
+                       - Incident response, Forensic & Recovery
                     </p>
                     <p className="text-sm md:text-base text-gray-500">
-                        {t('list-4')}
+                       - Cybersecurity Training
+                    </p>
+                    <p className="text-sm md:text-base text-gray-500">
+                       - Costs Cut
                     </p>
                 </div>
 

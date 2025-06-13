@@ -1,6 +1,8 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import clsx from 'clsx';
+import {NextIntlClientProvider} from 'next-intl';
+import {getLocale} from 'next-intl/server';
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -10,18 +12,18 @@ export const metadata: Metadata = {
 };
 
 
-export default function LocaleLayout(
+export default async function LocaleLayout(
     {
         children,
-        params: {locale}
     }: {
         children: React.ReactNode;
-        params: { locale: string };
+
     }) {
+        const locale = await getLocale();
     return (
         <html lang={locale}>
         <body className={clsx(inter.className, 'antialiased text-gray-900 text-medium')}>
-        {children}
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
         </body>
         </html>
     );
