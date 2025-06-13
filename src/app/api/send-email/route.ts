@@ -60,7 +60,7 @@ Sent on: ${new Date().toLocaleString()}
 
             const userCopyContent = {
                 from: 'XSight Cybersecurity <notifications@xsight.ch>',
-                reply_to: 'info@xsight.ch',
+                reply_to: 'yaroprima8@gmail.com',
                 to: [email],
                 subject: 'Thank you for contacting XSight - We received your message',
                 html: `
