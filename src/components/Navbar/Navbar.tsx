@@ -3,7 +3,6 @@ import {useTranslations} from "next-intl";
 import NavLinks from '@/components/Navbar/NavLinks';
 import {Link} from "@/navigation";
 import {Logo} from "@/components/Navbar/Logo";
-import LanguageSwitcher from "@/components/Navbar/LanguageSwitcher";
 import MobileMenu from "@/components/Navbar/MobileMenu";
 import {LogoTech} from "@/components/Navbar/LogoTech";
 
@@ -46,8 +45,6 @@ export default function Navbar() {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                    {/* Language Switcher */}
-                    <LanguageSwitcher/>
                     <MobileMenu navButton={navButton} navLinks={navLinks}/>
                 </div>
             </div>
