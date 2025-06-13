@@ -1,90 +1,81 @@
-import nodemailer, {Transporter} from 'nodemailer';
-import {NextRequest, NextResponse} from "next/server";
+// src/app/api/send-email/route.ts
+import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
     if (req.method === 'POST') {
-        // @ts-ignore
-        const {firstName, lastName, email, phone, message} = await req.json(); // Предполагается, что ваша форма отправляет эти поля
-        const messages = `
- <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form Submission</title>
-  </head>
-  <body>
-    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-      <h2>Contact Form Submission</h2>
-      <p><strong>First Name:</strong> ${firstName}</p>
-      <p><strong>Last Name:</strong> ${lastName}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Phone:</strong> ${phone}</p>
-      <p><strong>Message:</strong></p>
-      <p>${message}</p>
-    </div>
-  </body>
-  </html>
-`;
-        const messagesCopy = `
- <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy of Contact Form Submission</title>
-  </head>
-  <body>
-    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-    <p><strong>Thank you for contacting us. We have received your message.</strong></p>
-      <h2>Contact Form Submission</h2>
-      <p><strong>First Name:</strong> ${firstName}</p>
-      <p><strong>Last Name:</strong> ${lastName}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Phone:</strong> ${phone}</p>
-      <p><strong>Message:</strong></p>
-      <p>${message}</p>
-    </div>
-  </body>
-  </html>
-`;
-
-
-        // Создать SMTP транспорт
-        const transporter: Transporter = nodemailer.createTransport({
-            port: process.env.SMTP_PORT as number | undefined,
-            host: process.env.SMTP_SERVER,
-            auth: {
-                user: process.env.SMTP_USERNAME,
-                pass: process.env.SMTP_TOKEN,
-            }
-        });
-
         try {
-            // Отправить письмо
-            const info = await transporter.sendMail({
-                from: 'Xsight <sent.mail@xsight.ch>',
-                sender: 'Cyber',
-                to: 'yaroprima8@gmail.com',
-                subject: 'Contact form',
-                html: messages // Здесь включены данные из формы
-            });
+            const {firstName, lastName, email, phone, message} = await req.json();
+            
+            const emailContent = {
+                from: 'Xsight <sent.mail@xsight.ch>', // Замените на ваш домен
+                to: ['yaroprima8@gmail.com'],
+                subject: 'Contact Form Submission',
+                html: `
+                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+                    <h2>Contact Form Submission</h2>
+                    <p><strong>First Name:</strong> ${firstName}</p>
+                    <p><strong>Last Name:</strong> ${lastName}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                    <p><strong>Phone:</strong> ${phone}</p>
+                    <p><strong>Message:</strong></p>
+                    <p>${message}</p>
+                </div>
+                `
+            };
 
-            // Отправляем копию письма пользователю
-            await transporter.sendMail({
+            const userCopyContent = {
                 from: 'Xsight <sent.mail@xsight.ch>',
-                to: email, // Email пользователя
+                to: [email],
                 subject: 'Copy of Contact Form Submission',
-                html: messagesCopy
+                html: `
+                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+                    <p><strong>Thank you for contacting us. We have received your message.</strong></p>
+                    <h2>Your Submission</h2>
+                    <p><strong>First Name:</strong> ${firstName}</p>
+                    <p><strong>Last Name:</strong> ${lastName}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                    <p><strong>Phone:</strong> ${phone}</p>
+                    <p><strong>Message:</strong></p>
+                    <p>${message}</p>
+                </div>
+                `
+            };
+
+            // Отправка основного письма
+            const response1 = await fetch('https://api.resend.com/emails', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(emailContent),
             });
 
-            console.log('Письмо отправлено:', info.response);
-            return NextResponse.json({message: 'Письмо успешно отправлено'});
+            // Отправка копии пользователю
+            const response2 = await fetch('https://api.resend.com/emails', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(userCopyContent),
+            });
+
+            if (response1.ok && response2.ok) {
+                console.log('Emails sent successfully');
+                return NextResponse.json({message: 'Письма успешно отправлены'});
+            } else {
+                const error1 = await response1.text();
+                const error2 = await response2.text();
+                console.error('Failed to send emails:', error1, error2);
+                return NextResponse.json({error: 'Не удалось отправить письма'}, {status: 500});
+            }
+            
         } catch (error) {
             console.error('Ошибка отправки письма:', error);
-            return NextResponse.json({error: 'Не удалось отправить письмо'});
+            return NextResponse.json({error: 'Не удалось отправить письмо'}, {status: 500});
         }
     } else {
-        return NextResponse.json({error: 'Метод не разрешен'});
+        return NextResponse.json({error: 'Метод не разрешен'}, {status: 405});
     }
 }
