@@ -23,12 +23,6 @@ export default function Footer() {
                                 {t('home')}
                             </Link>
                         </li>
-{/*                         <li className="mb-4">
-                            <Link href={"/our-team"}
-                                  className="drop-shadow-xl transition-all">
-                                {t('our-team')}
-                            </Link>
-                        </li> */}
                          <li className="mb-4">
                             <Link href={"/contact"}
                                   className="drop-shadow-xl transition-all">
@@ -41,13 +35,7 @@ export default function Footer() {
                                 {t('services')}
                             </Link>
                         </li>
-                    </ul>
-{/*                     <ul className="basis-1/4 mb-4 md:mb-0">
-                       
-                        
-                    </ul> */}
-{/*                     <ul className="basis-1/4 mb-4 md:mb-0">
-                        <li className="mb-4">
+                         <li className="mb-4">
                             <Link href={"/privacy-policy"}
                                   className="drop-shadow-xl transition-all">
                                 {t('privacy-policy')}
@@ -59,21 +47,20 @@ export default function Footer() {
                                 {t('terms-of-use')}
                             </Link>
                         </li>
-                    </ul> */}
+                    </ul>
+            
                 </div>
             </div>
             <hr className="border-gray-200 sm:mx-auto"/>
             <div className="flex items-center justify-center align-baseline">
                 <div className="text-sm text-gray-700 sm:text-center py-6">
-                    © 2023
+                    © 2025
                     <Link href="/"
                           className="hover:underline"> XSight.ch™
                     </Link>
                     . All Rights Reserved.
                 </div>
             </div>
-
-
         </footer>
     )
 }

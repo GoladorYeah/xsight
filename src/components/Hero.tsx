@@ -25,7 +25,7 @@ export default function Hero() {
                             Cybersecurity can be cost-efficient!
                         </h2>
                         <div className="text-sm lg:text-lg text-balance mb-8">
-                            With the Investment MATRIX® approach, we&apos;ll reduce your cybersecurity and IT expenses by up to 30%—while still increasing your cybersecurity maturity to the highest, most reliable level.
+                            With the Investment MATRIX® approach, we&apos;ll <strong>reduce</strong> your cybersecurity and IT expenses by <strong>up to 30%</strong>—while still increasing your cybersecurity maturity to the highest, <strong>most reliable level</strong>.
                         </div>
                         <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row gap-4 justify-center items-center">
                             <div className="mb-4">
